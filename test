@@ -23,68 +23,68 @@ digraph {
 	CS180
 	CS005
 	CS006
+	MATH007A -> CS011 [style=dashed]
+	MATH008B -> CS011 [style=dashed]
+	MATH009A -> CS011 [style=dashed]
+	MATH09HA -> CS011 [style=dashed]
 	subgraph cluster_0 {
-		MATH007A -> CS011 [style=dashed]
-		MATH008B -> CS011 [style=dashed]
-		MATH009A -> CS011 [style=dashed]
-		MATH09HA -> CS011 [style=dashed]
 	}
+	CS010 -> CS011 [style=dashed]
+	CS010V -> CS011 [style=dashed]
+	MATH007B -> CS011 [style=dashed]
+	MATH009B -> CS011 [style=dashed]
+	MATH09HB -> CS011 [style=dashed]
 	subgraph cluster_1 {
-		CS010 -> CS011 [style=dashed]
-		CS010V -> CS011 [style=dashed]
-		MATH007B -> CS011 [style=dashed]
-		MATH009B -> CS011 [style=dashed]
-		MATH09HB -> CS011 [style=dashed]
 	}
+	CS010 -> CS012 [style=dashed]
+	CS010V -> CS012 [style=dashed]
 	subgraph cluster_2 {
-		CS010 -> CS012 [style=dashed]
-		CS010V -> CS012 [style=dashed]
 	}
+	CS012 -> CS014 [style=dashed]
+	CS012V -> CS014 [style=dashed]
 	subgraph cluster_3 {
-		CS012 -> CS014 [style=dashed]
-		CS012V -> CS014 [style=dashed]
 	}
+	CS010 -> CS061 [style=dashed]
+	CS010V -> CS061 [style=dashed]
 	subgraph cluster_4 {
-		CS010 -> CS061 [style=dashed]
-		CS010V -> CS061 [style=dashed]
 	}
 	CS014 -> CS100
 	CS010 -> CS111
+	CS011 -> CS111 [style=dashed]
+	MATH011 -> CS111 [style=dashed]
 	subgraph cluster_5 {
-		CS011 -> CS111 [style=dashed]
-		MATH011 -> CS111 [style=dashed]
 	}
+	MATH009C -> CS111 [style=dashed]
+	MATH09HC -> CS111 [style=dashed]
 	subgraph cluster_6 {
-		MATH009C -> CS111 [style=dashed]
-		MATH09HC -> CS111 [style=dashed]
 	}
 	CS061 -> CS120A
+	CS012 -> CS122A [style=dashed]
+	CS013 -> CS122A [style=dashed]
 	subgraph cluster_7 {
-		CS012 -> CS122A [style=dashed]
-		CS013 -> CS122A [style=dashed]
 	}
+	CS120B -> CS122A [style=dashed]
+	EE120B -> CS122A [style=dashed]
 	subgraph cluster_8 {
-		CS120B -> CS122A [style=dashed]
-		EE120B -> CS122A [style=dashed]
 	}
 	CS100 -> CS130
 	MATH031 -> CS130
 	CS014 -> CS141
 	CS111 -> CS141
+	MATH009C -> CS141 [style=dashed]
+	MATH09HC -> CS141 [style=dashed]
 	subgraph cluster_9 {
-		MATH009C -> CS141 [style=dashed]
-		MATH09HC -> CS141 [style=dashed]
 	}
 	CS061 -> CS153
 	CS100 -> CS153
 	CS111 -> CS153
+	EE120A -> CS161 [style=dashed]
+	CS120A -> CS161 [style=dashed]
 	subgraph cluster_10 {
-		EE120A -> CS161 [style=dashed]
-		CS120A -> CS161 [style=dashed]
 	}
+	EE120A -> CS161L [style=dashed]
+	CS120A -> CS161L [style=dashed]
 	subgraph cluster_11 {
-		EE120A -> CS161L [style=dashed]
-		CS120A -> CS161L [style=dashed]
 	}
 	CS161 -> CS161L
 	CS100 -> CS164
@@ -97,9 +97,9 @@ digraph {
 	CS100 -> CS170
 	CS111 -> CS170
 	CS100 -> CS171
+	MATH010A -> CS171 [style=dashed]
+	MATH031 -> CS171 [style=dashed]
 	subgraph cluster_12 {
-		MATH010A -> CS171 [style=dashed]
-		MATH031 -> CS171 [style=dashed]
 	}
 	CS100 -> CS180
 }

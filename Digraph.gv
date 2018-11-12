@@ -1,0 +1,60 @@
+// classflow physics
+digraph {
+	PHYS002A [color=royalblue]
+	PHYS002B [color=royalblue]
+	PHYS018 [color=royalblue]
+	PHYS037 [color=royalblue]
+	PHYS039 [color=royalblue]
+	PHYS040A [color=royalblue]
+	PHYS040C [color=royalblue]
+	PHYS041A [color=royalblue]
+	PHYS111 [color=royalblue]
+	PHYS130A [color=royalblue]
+	PHYS135A [color=royalblue]
+	PHYS139L [color=royalblue]
+	PHYS150A [color=royalblue]
+	PHYS156A [color=royalblue]
+	MATH009A -> PHYS002A [style=dashed]
+	MATH09HA -> PHYS002A [style=dashed]
+	MATH008B -> PHYS002A [style=dashed]
+	PHYS002A -> PHYS002B
+	MATH009B -> PHYS002B [style=dashed]
+	MATH09HB -> PHYS002B [style=dashed]
+	MATH009B -> PHYS040A
+	MATH008B -> PHYS040A [style=dashed]
+	MATH009A -> PHYS040A [style=dashed]
+	MATH09HA -> PHYS040A [style=dashed]
+	MATH09HB -> PHYS040A [style=dashed]
+	PHYS040B -> PHYS040C
+	MATH009C -> PHYS040C
+	MATH09HC -> PHYS040C [style=dashed]
+	MATH009A -> PHYS041A [style=dashed]
+	MATH09HA -> PHYS041A [style=dashed]
+	MATH010B -> PHYS111
+	MATH046 -> PHYS111
+	PHYS040D -> PHYS111
+	PHYS041C -> PHYS111 [style=dashed]
+	PHYS002C -> PHYS111 [style=dashed]
+	MATH009C -> PHYS130A
+	MATH010A -> PHYS130A
+	PHYS002A -> PHYS130A
+	PHYS040A -> PHYS130A [style=dashed]
+	PHYS041A -> PHYS130A [style=dashed]
+	MATH010B -> PHYS135A
+	MATH046 -> PHYS135A
+	PHYS002B -> PHYS135A
+	PHYS040C -> PHYS135A [style=dashed]
+	PHYS041B -> PHYS135A [style=dashed]
+	PHYS002B -> PHYS139L [style=dashed]
+	PHYS040C -> PHYS139L [style=dashed]
+	PHYS041B -> PHYS139L [style=dashed]
+	PHYS002B -> PHYS150A [style=dashed]
+	PHYS040E -> PHYS150A [style=dashed]
+	PHYS041C -> PHYS150A [style=dashed]
+	PHYS002C -> PHYS156A
+	MATH010B -> PHYS156A [style=dashed]
+	MATH046 -> PHYS156A [style=dashed]
+	PHYS130B -> PHYS156A [style=dashed]
+	PHYS040E -> PHYS156A [style=dashed]
+	PHYS041C -> PHYS156A [style=dashed]
+}

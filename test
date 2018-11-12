@@ -1,0 +1,105 @@
+// classflow physics
+digraph {
+	CS008
+	CS010
+	CS011
+	CS012
+	CS014
+	CS061
+	CS100
+	CS111
+	CS120A
+	CS122A
+	CS130
+	CS141
+	CS153
+	CS161
+	CS161L
+	CS164
+	CS165
+	CS166
+	CS170
+	CS171
+	CS180
+	CS005
+	CS006
+	subgraph cluster_0 {
+		MATH007A -> CS011 [style=dashed]
+		MATH008B -> CS011 [style=dashed]
+		MATH009A -> CS011 [style=dashed]
+		MATH09HA -> CS011 [style=dashed]
+	}
+	subgraph cluster_1 {
+		CS010 -> CS011 [style=dashed]
+		CS010V -> CS011 [style=dashed]
+		MATH007B -> CS011 [style=dashed]
+		MATH009B -> CS011 [style=dashed]
+		MATH09HB -> CS011 [style=dashed]
+	}
+	subgraph cluster_2 {
+		CS010 -> CS012 [style=dashed]
+		CS010V -> CS012 [style=dashed]
+	}
+	subgraph cluster_3 {
+		CS012 -> CS014 [style=dashed]
+		CS012V -> CS014 [style=dashed]
+	}
+	subgraph cluster_4 {
+		CS010 -> CS061 [style=dashed]
+		CS010V -> CS061 [style=dashed]
+	}
+	CS014 -> CS100
+	CS010 -> CS111
+	subgraph cluster_5 {
+		CS011 -> CS111 [style=dashed]
+		MATH011 -> CS111 [style=dashed]
+	}
+	subgraph cluster_6 {
+		MATH009C -> CS111 [style=dashed]
+		MATH09HC -> CS111 [style=dashed]
+	}
+	CS061 -> CS120A
+	subgraph cluster_7 {
+		CS012 -> CS122A [style=dashed]
+		CS013 -> CS122A [style=dashed]
+	}
+	subgraph cluster_8 {
+		CS120B -> CS122A [style=dashed]
+		EE120B -> CS122A [style=dashed]
+	}
+	CS100 -> CS130
+	MATH031 -> CS130
+	CS014 -> CS141
+	CS111 -> CS141
+	subgraph cluster_9 {
+		MATH009C -> CS141 [style=dashed]
+		MATH09HC -> CS141 [style=dashed]
+	}
+	CS061 -> CS153
+	CS100 -> CS153
+	CS111 -> CS153
+	subgraph cluster_10 {
+		EE120A -> CS161 [style=dashed]
+		CS120A -> CS161 [style=dashed]
+	}
+	subgraph cluster_11 {
+		EE120A -> CS161L [style=dashed]
+		CS120A -> CS161L [style=dashed]
+	}
+	CS161 -> CS161L
+	CS100 -> CS164
+	CS111 -> CS164
+	CS153 -> CS164
+	CS141 -> CS165
+	CS153 -> CS165
+	CS100 -> CS166
+	CS111 -> CS166
+	CS100 -> CS170
+	CS111 -> CS170
+	CS100 -> CS171
+	subgraph cluster_12 {
+		MATH010A -> CS171 [style=dashed]
+		MATH031 -> CS171 [style=dashed]
+	}
+	CS100 -> CS180
+}

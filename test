@@ -1,105 +1,156 @@
-// classflow physics
+// classflow test
 digraph {
-	CS008
-	CS010
-	CS011
-	CS012
-	CS014
-	CS061
-	CS100
-	CS111
-	CS120A
-	CS122A
-	CS130
-	CS141
-	CS153
-	CS161
-	CS161L
-	CS164
-	CS165
-	CS166
-	CS170
-	CS171
-	CS180
-	CS005
-	CS006
-	MATH007A -> CS011 [style=dashed]
-	MATH008B -> CS011 [style=dashed]
-	MATH009A -> CS011 [style=dashed]
-	MATH09HA -> CS011 [style=dashed]
+	MATH009A [color=gold shape="" style=filled]
+	PHYS002A [color=royalblue shape="" style=filled]
+	MATH009A -> PHYS002A [style=dashed]
+	MATH09HA [color=royalblue shape="" style=filled]
+	PHYS002A [color=royalblue shape="" style=filled]
+	MATH09HA -> PHYS002A [style=dashed]
+	MATH008B [color=royalblue shape="" style=filled]
+	PHYS002A [color=royalblue shape="" style=filled]
+	MATH008B -> PHYS002A [style=dashed]
 	subgraph cluster_0 {
 	}
-	CS010 -> CS011 [style=dashed]
-	CS010V -> CS011 [style=dashed]
-	MATH007B -> CS011 [style=dashed]
-	MATH009B -> CS011 [style=dashed]
-	MATH09HB -> CS011 [style=dashed]
+	MATH009B [color=gold shape="" style=filled]
+	PHYS002B [color=royalblue shape="" style=filled]
+	MATH009B -> PHYS002B [style=dashed]
+	MATH09HB [color=royalblue shape="" style=filled]
+	PHYS002B [color=royalblue shape="" style=filled]
+	MATH09HB -> PHYS002B [style=dashed]
 	subgraph cluster_1 {
 	}
-	CS010 -> CS012 [style=dashed]
-	CS010V -> CS012 [style=dashed]
+	PHYS002A [color=royalblue shape="" style=filled]
+	PHYS002B [color=royalblue shape="" style=filled]
+	PHYS002A -> PHYS002B
+	MATH008B [color=royalblue shape="" style=filled]
+	PHYS040A [color=royalblue shape="" style=filled]
+	MATH008B -> PHYS040A [style=dashed]
+	MATH009A [color=gold shape="" style=filled]
+	PHYS040A [color=royalblue shape="" style=filled]
+	MATH009A -> PHYS040A [style=dashed]
+	MATH09HA [color=royalblue shape="" style=filled]
+	PHYS040A [color=royalblue shape="" style=filled]
+	MATH09HA -> PHYS040A [style=dashed]
 	subgraph cluster_2 {
 	}
-	CS012 -> CS014 [style=dashed]
-	CS012V -> CS014 [style=dashed]
+	MATH009B [color=gold shape="" style=filled]
+	PHYS040A [color=royalblue shape="" style=filled]
+	MATH009B -> PHYS040A [style=dashed]
+	MATH09HB [color=royalblue shape="" style=filled]
+	PHYS040A [color=royalblue shape="" style=filled]
+	MATH09HB -> PHYS040A [style=dashed]
 	subgraph cluster_3 {
 	}
-	CS010 -> CS061 [style=dashed]
-	CS010V -> CS061 [style=dashed]
+	PHYS040B [color=royalblue shape="" style=filled]
+	PHYS040C [color=royalblue shape="" style=filled]
+	PHYS040B -> PHYS040C
+	MATH009C [color=gold shape="" style=filled]
+	PHYS040C [color=royalblue shape="" style=filled]
+	MATH009C -> PHYS040C [style=dashed]
+	MATH09HC [color=royalblue shape="" style=filled]
+	PHYS040C [color=royalblue shape="" style=filled]
+	MATH09HC -> PHYS040C [style=dashed]
 	subgraph cluster_4 {
 	}
-	CS014 -> CS100
-	CS010 -> CS111
-	CS011 -> CS111 [style=dashed]
-	MATH011 -> CS111 [style=dashed]
+	MATH009A [color=gold shape="" style=filled]
+	PHYS041A [color=gold shape="" style=filled]
+	MATH009A -> PHYS041A [style=dashed]
+	MATH09HA [color=royalblue shape="" style=filled]
+	PHYS041A [color=gold shape="" style=filled]
+	MATH09HA -> PHYS041A [style=dashed]
 	subgraph cluster_5 {
 	}
-	MATH009C -> CS111 [style=dashed]
-	MATH09HC -> CS111 [style=dashed]
+	MATH010B [color=gold shape="" style=filled]
+	PHYS111 [color=royalblue shape="" style=filled]
+	MATH010B -> PHYS111
+	MATH046 [color=gold shape="" style=filled]
+	PHYS111 [color=royalblue shape="" style=filled]
+	MATH046 -> PHYS111
+	PHYS040D [color=royalblue shape="" style=filled]
+	PHYS111 [color=royalblue shape="" style=filled]
+	PHYS040D -> PHYS111 [style=dashed]
+	PHYS041C [color=gold shape="" style=filled]
+	PHYS111 [color=royalblue shape="" style=filled]
+	PHYS041C -> PHYS111 [style=dashed]
+	PHYS002C [color=royalblue shape="" style=filled]
+	PHYS111 [color=royalblue shape="" style=filled]
+	PHYS002C -> PHYS111 [style=dashed]
 	subgraph cluster_6 {
 	}
-	CS061 -> CS120A
-	CS012 -> CS122A [style=dashed]
-	CS013 -> CS122A [style=dashed]
+	MATH009C [color=gold shape="" style=filled]
+	PHYS130A [color=gold shape="" style=filled]
+	MATH009C -> PHYS130A
+	MATH010A [color=gold shape="" style=filled]
+	PHYS130A [color=gold shape="" style=filled]
+	MATH010A -> PHYS130A
+	PHYS002A [color=royalblue shape="" style=filled]
+	PHYS130A [color=gold shape="" style=filled]
+	PHYS002A -> PHYS130A [style=dashed]
+	PHYS040A [color=royalblue shape="" style=filled]
+	PHYS130A [color=gold shape="" style=filled]
+	PHYS040A -> PHYS130A [style=dashed]
+	PHYS041A [color=gold shape="" style=filled]
+	PHYS130A [color=gold shape="" style=filled]
+	PHYS041A -> PHYS130A [style=dashed]
 	subgraph cluster_7 {
 	}
-	CS120B -> CS122A [style=dashed]
-	EE120B -> CS122A [style=dashed]
+	MATH010B [color=gold shape="" style=filled]
+	PHYS135A [color=gold shape="" style=filled]
+	MATH010B -> PHYS135A
+	MATH046 [color=gold shape="" style=filled]
+	PHYS135A [color=gold shape="" style=filled]
+	MATH046 -> PHYS135A
+	PHYS002B [color=royalblue shape="" style=filled]
+	PHYS135A [color=gold shape="" style=filled]
+	PHYS002B -> PHYS135A [style=dashed]
+	PHYS040C [color=royalblue shape="" style=filled]
+	PHYS135A [color=gold shape="" style=filled]
+	PHYS040C -> PHYS135A [style=dashed]
+	PHYS041B [color=gold shape="" style=filled]
+	PHYS135A [color=gold shape="" style=filled]
+	PHYS041B -> PHYS135A [style=dashed]
 	subgraph cluster_8 {
 	}
-	CS100 -> CS130
-	MATH031 -> CS130
-	CS014 -> CS141
-	CS111 -> CS141
-	MATH009C -> CS141 [style=dashed]
-	MATH09HC -> CS141 [style=dashed]
+	PHYS002B [color=royalblue shape="" style=filled]
+	PHYS139L [color=gold shape="" style=filled]
+	PHYS002B -> PHYS139L [style=dashed]
+	PHYS040C [color=royalblue shape="" style=filled]
+	PHYS139L [color=gold shape="" style=filled]
+	PHYS040C -> PHYS139L [style=dashed]
+	PHYS041B [color=gold shape="" style=filled]
+	PHYS139L [color=gold shape="" style=filled]
+	PHYS041B -> PHYS139L [style=dashed]
 	subgraph cluster_9 {
 	}
-	CS061 -> CS153
-	CS100 -> CS153
-	CS111 -> CS153
-	EE120A -> CS161 [style=dashed]
-	CS120A -> CS161 [style=dashed]
+	PHYS002B [color=royalblue shape="" style=filled]
+	PHYS150A [color=royalblue shape="" style=filled]
+	PHYS002B -> PHYS150A [style=dashed]
+	PHYS040E [color=royalblue shape="" style=filled]
+	PHYS150A [color=royalblue shape="" style=filled]
+	PHYS040E -> PHYS150A [style=dashed]
+	PHYS041C [color=gold shape="" style=filled]
+	PHYS150A [color=royalblue shape="" style=filled]
+	PHYS041C -> PHYS150A [style=dashed]
 	subgraph cluster_10 {
 	}
-	EE120A -> CS161L [style=dashed]
-	CS120A -> CS161L [style=dashed]
+	MATH010B [color=gold shape="" style=filled]
+	PHYS156A [color=gold shape="" style=filled]
+	MATH010B -> PHYS156A
+	MATH046 [color=gold shape="" style=filled]
+	PHYS156A [color=gold shape="" style=filled]
+	MATH046 -> PHYS156A
+	PHYS130B [color=gold shape="" style=filled]
+	PHYS156A [color=gold shape="" style=filled]
+	PHYS130B -> PHYS156A
+	PHYS002C [color=royalblue shape="" style=filled]
+	PHYS156A [color=gold shape="" style=filled]
+	PHYS002C -> PHYS156A [style=dashed]
+	PHYS040E [color=royalblue shape="" style=filled]
+	PHYS156A [color=gold shape="" style=filled]
+	PHYS040E -> PHYS156A [style=dashed]
+	PHYS041C [color=gold shape="" style=filled]
+	PHYS156A [color=gold shape="" style=filled]
+	PHYS041C -> PHYS156A [style=dashed]
 	subgraph cluster_11 {
 	}
-	CS161 -> CS161L
-	CS100 -> CS164
-	CS111 -> CS164
-	CS153 -> CS164
-	CS141 -> CS165
-	CS153 -> CS165
-	CS100 -> CS166
-	CS111 -> CS166
-	CS100 -> CS170
-	CS111 -> CS170
-	CS100 -> CS171
-	MATH010A -> CS171 [style=dashed]
-	MATH031 -> CS171 [style=dashed]
-	subgraph cluster_12 {
-	}
-	CS100 -> CS180
 }

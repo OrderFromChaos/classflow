@@ -1,6 +1,543 @@
 // classflow test
 digraph {
 	graph [rankdir=LR ranksep=2]
+	PSYC001 [color=lightblue2 shape=box style=filled]
+	PSYC110 [color=lightblue2 shape=box style=filled]
+	PSYC001 -> PSYC110
+	"Cell Biology and Neuroscience 120" [color=lightblue2 shape=box style=filled]
+	PSYC120L [color=lightblue2 shape=box style=filled]
+	"Cell Biology and Neuroscience 120" -> PSYC120L [style=dashed]
+	PSYC120 [color=lightblue2 shape=box style=filled]
+	PSYC120L [color=lightblue2 shape=box style=filled]
+	PSYC120 -> PSYC120L [style=dashed]
+	subgraph cluster_0 {
+	}
+	PSYC120L [label=<PSYC120L<BR /><FONT POINT-SIZE="10">Cell Biology and Neuroscience 120 or PSYC120</FONT>>]
+	"Cell Biology and Neuroscience 106" [color=lightblue2 shape=box style=filled]
+	PSYC121 [color=lightblue2 shape=box style=filled]
+	"Cell Biology and Neuroscience 106" -> PSYC121
+	"Cell Biology and Neuroscience 106" [color=lightblue2 shape=box style=filled]
+	PSYC124 [color=lightblue2 shape=box style=filled]
+	"Cell Biology and Neuroscience 106" -> PSYC124
+	PSYC001 [color=lightblue2 shape=box style=filled]
+	PSYC132 [color=lightblue2 shape=box style=filled]
+	PSYC001 -> PSYC132
+	PSYC002 [color=lightblue2 shape=box style=filled]
+	PSYC132 [color=lightblue2 shape=box style=filled]
+	PSYC002 -> PSYC132
+	PSYC011 [color=lightblue2 shape=box style=filled]
+	PSYC132 [color=lightblue2 shape=box style=filled]
+	PSYC011 -> PSYC132
+	PSYC012 [color=lightblue2 shape=box style=filled]
+	PSYC132 [color=lightblue2 shape=box style=filled]
+	PSYC012 -> PSYC132
+	PSYC002 [color=lightblue2 shape=box style=filled]
+	PSYC142 [color=lightblue2 shape=box style=filled]
+	PSYC002 -> PSYC142
+	PSYC001 [color=lightblue2 shape=box style=filled]
+	PSYC150 [color=lightblue2 shape=box style=filled]
+	PSYC001 -> PSYC150
+	PSYC002 [color=lightblue2 shape=box style=filled]
+	PSYC150 [color=lightblue2 shape=box style=filled]
+	PSYC002 -> PSYC150
+	PSYC011 [color=lightblue2 shape=box style=filled]
+	PSYC150 [color=lightblue2 shape=box style=filled]
+	PSYC011 -> PSYC150
+	PSYC012 [color=lightblue2 shape=box style=filled]
+	PSYC150 [color=lightblue2 shape=box style=filled]
+	PSYC012 -> PSYC150
+	PSYC001 [color=lightblue2 shape=box style=filled]
+	PSYC152 [color=lightblue2 shape=box style=filled]
+	PSYC001 -> PSYC152
+	PSYC002 [color=lightblue2 shape=box style=filled]
+	PSYC152 [color=lightblue2 shape=box style=filled]
+	PSYC002 -> PSYC152
+	PSYC011 [color=lightblue2 shape=box style=filled]
+	PSYC152 [color=lightblue2 shape=box style=filled]
+	PSYC011 -> PSYC152
+	PSYC012 [color=lightblue2 shape=box style=filled]
+	PSYC152 [color=lightblue2 shape=box style=filled]
+	PSYC012 -> PSYC152
+	PSYC001 [color=lightblue2 shape=box style=filled]
+	PSYC161 [color=lightblue2 shape=box style=filled]
+	PSYC001 -> PSYC161
+	PSYC002 [color=lightblue2 shape=box style=filled]
+	PSYC161 [color=lightblue2 shape=box style=filled]
+	PSYC002 -> PSYC161
+	PSYC011 [color=lightblue2 shape=box style=filled]
+	PSYC161 [color=lightblue2 shape=box style=filled]
+	PSYC011 -> PSYC161
+	PSYC012 [color=lightblue2 shape=box style=filled]
+	PSYC161 [color=lightblue2 shape=box style=filled]
+	PSYC012 -> PSYC161
+	PSYC001 [color=lightblue2 shape=box style=filled]
+	PSYC169 [color=lightblue2 shape=box style=filled]
+	PSYC001 -> PSYC169
+	PSYC002 [color=lightblue2 shape=box style=filled]
+	PSYC169 [color=lightblue2 shape=box style=filled]
+	PSYC002 -> PSYC169
+	PSYC011 [color=lightblue2 shape=box style=filled]
+	PSYC169 [color=lightblue2 shape=box style=filled]
+	PSYC011 -> PSYC169
+	PSYC012 [color=lightblue2 shape=box style=filled]
+	PSYC169 [color=lightblue2 shape=box style=filled]
+	PSYC012 -> PSYC169
+	PSYC160 [color=lightblue2 shape=box style=filled]
+	PSYC169 [color=lightblue2 shape=box style=filled]
+	PSYC160 -> PSYC169
+	PSYC001 [color=lightblue2 shape=box style=filled]
+	PSYC175 [color=lightblue2 shape=box style=filled]
+	PSYC001 -> PSYC175
+	PSYC002 [color=lightblue2 shape=box style=filled]
+	PSYC175 [color=lightblue2 shape=box style=filled]
+	PSYC002 -> PSYC175 [style=dashed]
+	"Law & Society 100" [color=lightblue2 shape=box style=filled]
+	PSYC175 [color=lightblue2 shape=box style=filled]
+	"Law & Society 100" -> PSYC175 [style=dashed]
+	subgraph cluster_1 {
+	}
+	PSYC175 [label=<PSYC175<BR /><FONT POINT-SIZE="10">PSYC001</FONT>>]
+	PSYC001 [color=lightblue2 shape=box style=filled]
+	PSYC181 [color=lightblue2 shape=box style=filled]
+	PSYC001 -> PSYC181
+	PSYC002 [color=lightblue2 shape=box style=filled]
+	PSYC181 [color=lightblue2 shape=box style=filled]
+	PSYC002 -> PSYC181
+	PSYC011 [color=lightblue2 shape=box style=filled]
+	PSYC181 [color=lightblue2 shape=box style=filled]
+	PSYC011 -> PSYC181
+	PSYC012 [color=lightblue2 shape=box style=filled]
+	PSYC181 [color=lightblue2 shape=box style=filled]
+	PSYC012 -> PSYC181
+	PSYC134 [color=lightblue2 shape=box style=filled]
+	PSYC181 [color=lightblue2 shape=box style=filled]
+	PSYC134 -> PSYC181
+	SOC001 [color=lightblue2 shape=box style=filled]
+	SOC002F [color=lightblue2 shape=box style=filled]
+	SOC001 -> SOC002F [style=dashed]
+	SOC001H [color=lightblue2 shape=box style=filled]
+	SOC002F [color=lightblue2 shape=box style=filled]
+	SOC001H -> SOC002F [style=dashed]
+	subgraph cluster_2 {
+	}
+	SOC002F [label=<SOC002F<BR /><FONT POINT-SIZE="10">SOC001 or SOC001H</FONT>>]
+	ENGL001B [color=lightblue2 shape=box style=filled]
+	PSYC012 [color=lightblue2 shape=box style=filled]
+	ENGL001B -> PSYC012
+	PSYC001 [color=lightblue2 shape=box style=filled]
+	PSYC012 [color=lightblue2 shape=box style=filled]
+	PSYC001 -> PSYC012
+	PSYC002 [color=lightblue2 shape=box style=filled]
+	PSYC012 [color=lightblue2 shape=box style=filled]
+	PSYC002 -> PSYC012
+	PSYC011 [color=lightblue2 shape=box style=filled]
+	PSYC012 [color=lightblue2 shape=box style=filled]
+	PSYC011 -> PSYC012
+	ENGL001A [color=lightblue2 shape=box style=filled]
+	PSYC013 [color=lightblue2 shape=box style=filled]
+	ENGL001A -> PSYC013
+	MATH007A [color=lightblue2 shape=box style=filled]
+	CS011 [color=lightblue2 shape=box style=filled]
+	MATH007A -> CS011 [style=dashed]
+	MATH008B [color=lightblue2 shape=box style=filled]
+	CS011 [color=lightblue2 shape=box style=filled]
+	MATH008B -> CS011 [style=dashed]
+	MATH009A [color=gold shape=box style=filled]
+	CS011 [color=lightblue2 shape=box style=filled]
+	MATH009A -> CS011 [style=dashed]
+	MATH09HA [color=lightblue2 shape=box style=filled]
+	CS011 [color=lightblue2 shape=box style=filled]
+	MATH09HA -> CS011 [style=dashed]
+	subgraph cluster_3 {
+	}
+	CS011 [label=<CS011<BR /><FONT POINT-SIZE="10">MATH007A or MATH008B or MATH009A or MATH09HA</FONT>>]
+	CS010 [color=gold shape=box style=filled]
+	CS011 [color=lightblue2 shape=box style=filled]
+	CS010 -> CS011 [style=dashed]
+	CS010V [color=lightblue2 shape=box style=filled]
+	CS011 [color=lightblue2 shape=box style=filled]
+	CS010V -> CS011 [style=dashed]
+	MATH007B [color=lightblue2 shape=box style=filled]
+	CS011 [color=lightblue2 shape=box style=filled]
+	MATH007B -> CS011 [style=dashed]
+	MATH009B [color=gold shape=box style=filled]
+	CS011 [color=lightblue2 shape=box style=filled]
+	MATH009B -> CS011 [style=dashed]
+	MATH09HB [color=lightblue2 shape=box style=filled]
+	CS011 [color=lightblue2 shape=box style=filled]
+	MATH09HB -> CS011 [style=dashed]
+	subgraph cluster_4 {
+	}
+	CS011 [label=<CS011<BR /><FONT POINT-SIZE="10">MATH007A or MATH008B or MATH009A or MATH09HA</FONT>>]
+	CS010 [color=gold shape=box style=filled]
+	CS012 [color=lightblue2 shape=box style=filled]
+	CS010 -> CS012 [style=dashed]
+	CS010V [color=lightblue2 shape=box style=filled]
+	CS012 [color=lightblue2 shape=box style=filled]
+	CS010V -> CS012 [style=dashed]
+	subgraph cluster_5 {
+	}
+	CS012 [label=<CS012<BR /><FONT POINT-SIZE="10">CS010 or CS010V</FONT>>]
+	CS012 [color=lightblue2 shape=box style=filled]
+	CS014 [color=lightblue2 shape=box style=filled]
+	CS012 -> CS014 [style=dashed]
+	CS012V [color=lightblue2 shape=box style=filled]
+	CS014 [color=lightblue2 shape=box style=filled]
+	CS012V -> CS014 [style=dashed]
+	subgraph cluster_6 {
+	}
+	CS014 [label=<CS014<BR /><FONT POINT-SIZE="10">CS012 or CS012V</FONT>>]
+	CS010 [color=gold shape=box style=filled]
+	CS061 [color=lightblue2 shape=box style=filled]
+	CS010 -> CS061 [style=dashed]
+	CS010V [color=lightblue2 shape=box style=filled]
+	CS061 [color=lightblue2 shape=box style=filled]
+	CS010V -> CS061 [style=dashed]
+	subgraph cluster_7 {
+	}
+	CS061 [label=<CS061<BR /><FONT POINT-SIZE="10">CS010 or CS010V</FONT>>]
+	CS014 [color=lightblue2 shape=box style=filled]
+	CS100 [color=lightblue2 shape=box style=filled]
+	CS014 -> CS100
+	CS010 [color=gold shape=box style=filled]
+	CS111 [color=lightblue2 shape=box style=filled]
+	CS010 -> CS111
+	CS011 [color=lightblue2 shape=box style=filled]
+	CS111 [color=lightblue2 shape=box style=filled]
+	CS011 -> CS111 [style=dashed]
+	MATH011 [color=lightblue2 shape=box style=filled]
+	CS111 [color=lightblue2 shape=box style=filled]
+	MATH011 -> CS111 [style=dashed]
+	subgraph cluster_8 {
+	}
+	CS111 [label=<CS111<BR /><FONT POINT-SIZE="10">CS010</FONT>>]
+	MATH009C [color=gold shape=box style=filled]
+	CS111 [color=lightblue2 shape=box style=filled]
+	MATH009C -> CS111 [style=dashed]
+	MATH09HC [color=lightblue2 shape=box style=filled]
+	CS111 [color=lightblue2 shape=box style=filled]
+	MATH09HC -> CS111 [style=dashed]
+	subgraph cluster_9 {
+	}
+	CS111 [label=<CS111<BR /><FONT POINT-SIZE="10">CS010</FONT>>]
+	CS061 [color=lightblue2 shape=box style=filled]
+	CS120A [color=lightblue2 shape=box style=filled]
+	CS061 -> CS120A
+	CS012 [color=lightblue2 shape=box style=filled]
+	CS122A [color=lightblue2 shape=box style=filled]
+	CS012 -> CS122A [style=dashed]
+	CS013 [color=lightblue2 shape=box style=filled]
+	CS122A [color=lightblue2 shape=box style=filled]
+	CS013 -> CS122A [style=dashed]
+	subgraph cluster_10 {
+	}
+	CS122A [label=<CS122A<BR /><FONT POINT-SIZE="10">CS012 or CS013</FONT>>]
+	CS120B [color=lightblue2 shape=box style=filled]
+	CS122A [color=lightblue2 shape=box style=filled]
+	CS120B -> CS122A [style=dashed]
+	EE120B [color=lightblue2 shape=box style=filled]
+	CS122A [color=lightblue2 shape=box style=filled]
+	EE120B -> CS122A [style=dashed]
+	subgraph cluster_11 {
+	}
+	CS122A [label=<CS122A<BR /><FONT POINT-SIZE="10">CS012 or CS013</FONT>>]
+	CS100 [color=lightblue2 shape=box style=filled]
+	CS130 [color=lightblue2 shape=box style=filled]
+	CS100 -> CS130
+	MATH031 [color=lightblue2 shape=box style=filled]
+	CS130 [color=lightblue2 shape=box style=filled]
+	MATH031 -> CS130
+	CS014 [color=lightblue2 shape=box style=filled]
+	CS141 [color=lightblue2 shape=box style=filled]
+	CS014 -> CS141
+	CS111 [color=lightblue2 shape=box style=filled]
+	CS141 [color=lightblue2 shape=box style=filled]
+	CS111 -> CS141
+	MATH009C [color=gold shape=box style=filled]
+	CS141 [color=lightblue2 shape=box style=filled]
+	MATH009C -> CS141 [style=dashed]
+	MATH09HC [color=lightblue2 shape=box style=filled]
+	CS141 [color=lightblue2 shape=box style=filled]
+	MATH09HC -> CS141 [style=dashed]
+	subgraph cluster_12 {
+	}
+	CS141 [label=<CS141<BR /><FONT POINT-SIZE="10">CS014</FONT>>]
+	CS061 [color=lightblue2 shape=box style=filled]
+	CS153 [color=lightblue2 shape=box style=filled]
+	CS061 -> CS153
+	CS100 [color=lightblue2 shape=box style=filled]
+	CS153 [color=lightblue2 shape=box style=filled]
+	CS100 -> CS153
+	CS111 [color=lightblue2 shape=box style=filled]
+	CS153 [color=lightblue2 shape=box style=filled]
+	CS111 -> CS153
+	EE120A [color=lightblue2 shape=box style=filled]
+	CS161 [color=lightblue2 shape=box style=filled]
+	EE120A -> CS161 [style=dashed]
+	CS120A [color=lightblue2 shape=box style=filled]
+	CS161 [color=lightblue2 shape=box style=filled]
+	CS120A -> CS161 [style=dashed]
+	subgraph cluster_13 {
+	}
+	CS161 [label=<CS161<BR /><FONT POINT-SIZE="10">EE120A or CS120A</FONT>>]
+	EE120A [color=lightblue2 shape=box style=filled]
+	CS161L [color=lightblue2 shape=box style=filled]
+	EE120A -> CS161L [style=dashed]
+	CS120A [color=lightblue2 shape=box style=filled]
+	CS161L [color=lightblue2 shape=box style=filled]
+	CS120A -> CS161L [style=dashed]
+	subgraph cluster_14 {
+	}
+	CS161L [label=<CS161L<BR /><FONT POINT-SIZE="10">EE120A or CS120A</FONT>>]
+	CS161 [color=lightblue2 shape=box style=filled]
+	CS161L [color=lightblue2 shape=box style=filled]
+	CS161 -> CS161L
+	CS100 [color=lightblue2 shape=box style=filled]
+	CS164 [color=lightblue2 shape=box style=filled]
+	CS100 -> CS164
+	CS111 [color=lightblue2 shape=box style=filled]
+	CS164 [color=lightblue2 shape=box style=filled]
+	CS111 -> CS164
+	CS153 [color=lightblue2 shape=box style=filled]
+	CS164 [color=lightblue2 shape=box style=filled]
+	CS153 -> CS164
+	CS141 [color=lightblue2 shape=box style=filled]
+	CS165 [color=lightblue2 shape=box style=filled]
+	CS141 -> CS165
+	CS153 [color=lightblue2 shape=box style=filled]
+	CS165 [color=lightblue2 shape=box style=filled]
+	CS153 -> CS165
+	CS100 [color=lightblue2 shape=box style=filled]
+	CS166 [color=lightblue2 shape=box style=filled]
+	CS100 -> CS166
+	CS111 [color=lightblue2 shape=box style=filled]
+	CS166 [color=lightblue2 shape=box style=filled]
+	CS111 -> CS166
+	CS100 [color=lightblue2 shape=box style=filled]
+	CS170 [color=lightblue2 shape=box style=filled]
+	CS100 -> CS170
+	CS111 [color=lightblue2 shape=box style=filled]
+	CS170 [color=lightblue2 shape=box style=filled]
+	CS111 -> CS170
+	CS100 [color=lightblue2 shape=box style=filled]
+	CS171 [color=lightblue2 shape=box style=filled]
+	CS100 -> CS171
+	MATH010A [color=gold shape=box style=filled]
+	CS171 [color=lightblue2 shape=box style=filled]
+	MATH010A -> CS171 [style=dashed]
+	MATH031 [color=lightblue2 shape=box style=filled]
+	CS171 [color=lightblue2 shape=box style=filled]
+	MATH031 -> CS171 [style=dashed]
+	subgraph cluster_15 {
+	}
+	CS171 [label=<CS171<BR /><FONT POINT-SIZE="10">CS100</FONT>>]
+	CS100 [color=lightblue2 shape=box style=filled]
+	CS180 [color=lightblue2 shape=box style=filled]
+	CS100 -> CS180
+	DNCE014 [color=lightblue2 shape=box style=filled]
+	DNCE115J [color=lightblue2 shape=box style=filled]
+	DNCE014 -> DNCE115J
+	CHEM001C [color=gold shape=box style=filled]
+	ENSC100 [color=lightblue2 shape=box style=filled]
+	CHEM001C -> ENSC100 [style=dashed]
+	CHEM01HC [color=lightblue2 shape=box style=filled]
+	ENSC100 [color=lightblue2 shape=box style=filled]
+	CHEM01HC -> ENSC100 [style=dashed]
+	subgraph cluster_16 {
+	}
+	ENSC100 [label=<ENSC100<BR /><FONT POINT-SIZE="10">CHEM001C or CHEM01HC</FONT>>]
+	CHEM01LC [color=lightblue2 shape=box style=filled]
+	ENSC100 [color=lightblue2 shape=box style=filled]
+	CHEM01LC -> ENSC100 [style=dashed]
+	CHEM1HLC [color=lightblue2 shape=box style=filled]
+	ENSC100 [color=lightblue2 shape=box style=filled]
+	CHEM1HLC -> ENSC100 [style=dashed]
+	subgraph cluster_17 {
+	}
+	ENSC100 [label=<ENSC100<BR /><FONT POINT-SIZE="10">CHEM001C or CHEM01HC</FONT>>]
+	ENSC002 [color=lightblue2 shape=box style=filled]
+	ENSC100 [color=lightblue2 shape=box style=filled]
+	ENSC002 -> ENSC100 [style=dashed]
+	ENSC002H [color=lightblue2 shape=box style=filled]
+	ENSC100 [color=lightblue2 shape=box style=filled]
+	ENSC002H -> ENSC100 [style=dashed]
+	"Chemical and Environmental Eng 010" [color=lightblue2 shape=box style=filled]
+	ENSC100 [color=lightblue2 shape=box style=filled]
+	"Chemical and Environmental Eng 010" -> ENSC100 [style=dashed]
+	subgraph cluster_18 {
+	}
+	ENSC100 [label=<ENSC100<BR /><FONT POINT-SIZE="10">CHEM001C or CHEM01HC</FONT>>]
+	CHEM008A [color=lightblue2 shape=box style=filled]
+	ENSC135 [color=lightblue2 shape=box style=filled]
+	CHEM008A -> ENSC135
+	CHEM08LA [color=lightblue2 shape=box style=filled]
+	ENSC135 [color=lightblue2 shape=box style=filled]
+	CHEM08LA -> ENSC135 [style=dashed]
+	CHEM08HA [color=lightblue2 shape=box style=filled]
+	ENSC135 [color=lightblue2 shape=box style=filled]
+	CHEM08HA -> ENSC135 [style=dashed]
+	subgraph cluster_19 {
+	}
+	ENSC135 [label=<ENSC135<BR /><FONT POINT-SIZE="10">CHEM008A</FONT>>]
+	CHEM08HLA [color=lightblue2 shape=box style=filled]
+	ENSC135 [color=lightblue2 shape=box style=filled]
+	CHEM08HLA -> ENSC135 [style=dashed]
+	CHEM12HA [color=lightblue2 shape=box style=filled]
+	ENSC135 [color=lightblue2 shape=box style=filled]
+	CHEM12HA -> ENSC135 [style=dashed]
+	CHEM12A [color=lightblue2 shape=box style=filled]
+	ENSC135 [color=lightblue2 shape=box style=filled]
+	CHEM12A -> ENSC135 [style=dashed]
+	subgraph cluster_20 {
+	}
+	ENSC135 [label=<ENSC135<BR /><FONT POINT-SIZE="10">CHEM008A</FONT>>]
+	CHEM008B [color=lightblue2 shape=box style=filled]
+	ENSC135 [color=lightblue2 shape=box style=filled]
+	CHEM008B -> ENSC135
+	CHEM08LB [color=lightblue2 shape=box style=filled]
+	ENSC135 [color=lightblue2 shape=box style=filled]
+	CHEM08LB -> ENSC135 [style=dashed]
+	CHEM08HB [color=lightblue2 shape=box style=filled]
+	ENSC135 [color=lightblue2 shape=box style=filled]
+	CHEM08HB -> ENSC135 [style=dashed]
+	subgraph cluster_21 {
+	}
+	ENSC135 [label=<ENSC135<BR /><FONT POINT-SIZE="10">CHEM008A</FONT>>]
+	CHEM08HLB [color=lightblue2 shape=box style=filled]
+	ENSC135 [color=lightblue2 shape=box style=filled]
+	CHEM08HLB -> ENSC135 [style=dashed]
+	CHEM12B [color=lightblue2 shape=box style=filled]
+	ENSC135 [color=lightblue2 shape=box style=filled]
+	CHEM12B -> ENSC135 [style=dashed]
+	CHEM12HB [color=lightblue2 shape=box style=filled]
+	ENSC135 [color=lightblue2 shape=box style=filled]
+	CHEM12HB -> ENSC135 [style=dashed]
+	subgraph cluster_22 {
+	}
+	ENSC135 [label=<ENSC135<BR /><FONT POINT-SIZE="10">CHEM008A</FONT>>]
+	CHEM005 [color=lightblue2 shape=box style=filled]
+	ENSC136 [color=lightblue2 shape=box style=filled]
+	CHEM005 -> ENSC136 [style=dashed]
+	ENSC101 [color=lightblue2 shape=box style=filled]
+	ENSC136 [color=lightblue2 shape=box style=filled]
+	ENSC101 -> ENSC136 [style=dashed]
+	subgraph cluster_23 {
+	}
+	ENSC136 [label=<ENSC136<BR /><FONT POINT-SIZE="10">CHEM005 or ENSC101</FONT>>]
+	ENSC100 [color=lightblue2 shape=box style=filled]
+	ENSC163 [color=lightblue2 shape=box style=filled]
+	ENSC100 -> ENSC163
+	ENSC101 [color=lightblue2 shape=box style=filled]
+	ENSC163 [color=lightblue2 shape=box style=filled]
+	ENSC101 -> ENSC163
+	MATH007B [color=lightblue2 shape=box style=filled]
+	ENSC163 [color=lightblue2 shape=box style=filled]
+	MATH007B -> ENSC163 [style=dashed]
+	MATH009B [color=gold shape=box style=filled]
+	ENSC163 [color=lightblue2 shape=box style=filled]
+	MATH009B -> ENSC163 [style=dashed]
+	MATH09HB [color=lightblue2 shape=box style=filled]
+	ENSC163 [color=lightblue2 shape=box style=filled]
+	MATH09HB -> ENSC163 [style=dashed]
+	subgraph cluster_24 {
+	}
+	ENSC163 [label=<ENSC163<BR /><FONT POINT-SIZE="10">ENSC100</FONT>>]
+	"Statistics 100B" [color=lightblue2 shape=box style=filled]
+	ENSC163 [color=lightblue2 shape=box style=filled]
+	"Statistics 100B" -> ENSC163
+	ENSC006 [color=lightblue2 shape=box style=filled]
+	ENSC174 [color=lightblue2 shape=box style=filled]
+	ENSC006 -> ENSC174 [style=dashed]
+	"Economics 006" [color=lightblue2 shape=box style=filled]
+	ENSC174 [color=lightblue2 shape=box style=filled]
+	"Economics 006" -> ENSC174 [style=dashed]
+	ENSC143A [color=lightblue2 shape=box style=filled]
+	ENSC174 [color=lightblue2 shape=box style=filled]
+	ENSC143A -> ENSC174 [style=dashed]
+	"Economics 143A" [color=lightblue2 shape=box style=filled]
+	ENSC174 [color=lightblue2 shape=box style=filled]
+	"Economics 143A" -> ENSC174 [style=dashed]
+	subgraph cluster_25 {
+	}
+	ENSC174 [label=<ENSC174<BR /><FONT POINT-SIZE="10">ENSC006 or Economics 006 or ENSC143A or Economics 143A</FONT>>]
+	ENSC100 [color=lightblue2 shape=box style=filled]
+	ENSC174 [color=lightblue2 shape=box style=filled]
+	ENSC100 -> ENSC174 [style=dashed]
+	ENSC101 [color=lightblue2 shape=box style=filled]
+	ENSC174 [color=lightblue2 shape=box style=filled]
+	ENSC101 -> ENSC174 [style=dashed]
+	ENSC102 [color=lightblue2 shape=box style=filled]
+	ENSC174 [color=lightblue2 shape=box style=filled]
+	ENSC102 -> ENSC174 [style=dashed]
+	subgraph cluster_26 {
+	}
+	ENSC174 [label=<ENSC174<BR /><FONT POINT-SIZE="10">ENSC006 or Economics 006 or ENSC143A or Economics 143A</FONT>>]
+	ME002 [color=lightblue2 shape=box style=filled]
+	ME018 [color=lightblue2 shape=box style=filled]
+	ME002 -> ME018
+	MATH010A [color=gold shape=box style=filled]
+	ME100A [color=lightblue2 shape=box style=filled]
+	MATH010A -> ME100A
+	ME018 [color=lightblue2 shape=box style=filled]
+	ME100A [color=lightblue2 shape=box style=filled]
+	ME018 -> ME100A
+	PHYS040B [color=lightblue2 shape=box style=filled]
+	ME100A [color=lightblue2 shape=box style=filled]
+	PHYS040B -> ME100A
+	MATH046 [color=gold shape=box style=filled]
+	ME103 [color=lightblue2 shape=box style=filled]
+	MATH046 -> ME103
+	ME010 [color=lightblue2 shape=box style=filled]
+	ME103 [color=lightblue2 shape=box style=filled]
+	ME010 -> ME103
+	ME018 [color=lightblue2 shape=box style=filled]
+	ME103 [color=lightblue2 shape=box style=filled]
+	ME018 -> ME103
+	CHEM001B [color=gold shape=box style=filled]
+	ME114 [color=lightblue2 shape=box style=filled]
+	CHEM001B -> ME114
+	PHYS040C [color=lightblue2 shape=box style=filled]
+	ME114 [color=lightblue2 shape=box style=filled]
+	PHYS040C -> ME114
+	ME116A [color=lightblue2 shape=box style=filled]
+	ME116B [color=lightblue2 shape=box style=filled]
+	ME116A -> ME116B
+	ME100A [color=lightblue2 shape=box style=filled]
+	ME135 [color=lightblue2 shape=box style=filled]
+	ME100A -> ME135
+	ME113 [color=lightblue2 shape=box style=filled]
+	ME135 [color=lightblue2 shape=box style=filled]
+	ME113 -> ME135
+	ME116A [color=lightblue2 shape=box style=filled]
+	ME135 [color=lightblue2 shape=box style=filled]
+	ME116A -> ME135
+	BIEN105 [color=lightblue2 shape=box style=filled]
+	ME138 [color=lightblue2 shape=box style=filled]
+	BIEN105 -> ME138 [style=dashed]
+	ME113 [color=lightblue2 shape=box style=filled]
+	ME138 [color=lightblue2 shape=box style=filled]
+	ME113 -> ME138 [style=dashed]
+	subgraph cluster_27 {
+	}
+	ME138 [label=<ME138<BR /><FONT POINT-SIZE="10">BIEN105 or ME113</FONT>>]
+	MATH046 [color=gold shape=box style=filled]
+	ME138 [color=lightblue2 shape=box style=filled]
+	MATH046 -> ME138
+	PHYS040B [color=lightblue2 shape=box style=filled]
+	ME138 [color=lightblue2 shape=box style=filled]
+	PHYS040B -> ME138
+	ME120 [color=lightblue2 shape=box style=filled]
+	ME145 [color=lightblue2 shape=box style=filled]
+	ME120 -> ME145
+	ME121 [color=lightblue2 shape=box style=filled]
+	ME145 [color=lightblue2 shape=box style=filled]
+	ME121 -> ME145
+	ME110 [color=lightblue2 shape=box style=filled]
+	ME156 [color=lightblue2 shape=box style=filled]
+	ME110 -> ME156
+	ME114 [color=lightblue2 shape=box style=filled]
+	ME156 [color=lightblue2 shape=box style=filled]
+	ME114 -> ME156
 	MATH009A [color=gold shape=box style=filled]
 	PHYS002A [color=lightblue2 shape=box style=filled]
 	MATH009A -> PHYS002A [style=dashed]
@@ -10,16 +547,1459 @@ digraph {
 	MATH008B [color=lightblue2 shape=box style=filled]
 	PHYS002A [color=lightblue2 shape=box style=filled]
 	MATH008B -> PHYS002A [style=dashed]
-	subgraph cluster_0 {
+	subgraph cluster_28 {
 	}
 	PHYS002A [label=<PHYS002A<BR /><FONT POINT-SIZE="10">MATH009A or MATH09HA or MATH008B</FONT>>]
+	MATH046 [color=gold shape=box style=filled]
+	EE001A [color=lightblue2 shape=box style=filled]
+	MATH046 -> EE001A
+	PHYS040C [color=lightblue2 shape=box style=filled]
+	EE001A [color=lightblue2 shape=box style=filled]
+	PHYS040C -> EE001A
+	EE001A [color=lightblue2 shape=box style=filled]
+	EE001B [color=lightblue2 shape=box style=filled]
+	EE001A -> EE001B
+	EE01LA [color=lightblue2 shape=box style=filled]
+	EE001B [color=lightblue2 shape=box style=filled]
+	EE01LA -> EE001B
+	EE001B [color=lightblue2 shape=box style=filled]
+	EE100A [color=lightblue2 shape=box style=filled]
+	EE001B -> EE100A
+	EE020 [color=lightblue2 shape=box style=filled]
+	EE110A [color=lightblue2 shape=box style=filled]
+	EE020 -> EE110A
+	MATH046 [color=gold shape=box style=filled]
+	EE110A [color=lightblue2 shape=box style=filled]
+	MATH046 -> EE110A
+	EE001B [color=lightblue2 shape=box style=filled]
+	EE110A [color=lightblue2 shape=box style=filled]
+	EE001B -> EE110A
+	EE110B [color=lightblue2 shape=box style=filled]
+	EE115 [color=lightblue2 shape=box style=filled]
+	EE110B -> EE115
+	CS061 [color=lightblue2 shape=box style=filled]
+	EE120A [color=lightblue2 shape=box style=filled]
+	CS061 -> EE120A
+	EE100B [color=lightblue2 shape=box style=filled]
+	EE128 [color=lightblue2 shape=box style=filled]
+	EE100B -> EE128
+	CS120B [color=lightblue2 shape=box style=filled]
+	EE128 [color=lightblue2 shape=box style=filled]
+	CS120B -> EE128 [style=dashed]
+	EE120B [color=lightblue2 shape=box style=filled]
+	EE128 [color=lightblue2 shape=box style=filled]
+	EE120B -> EE128 [style=dashed]
+	subgraph cluster_29 {
+	}
+	EE128 [label=<EE128<BR /><FONT POINT-SIZE="10">EE100B</FONT>>]
+	EE100A [color=lightblue2 shape=box style=filled]
+	EE133 [color=lightblue2 shape=box style=filled]
+	EE100A -> EE133
+	PHYS040C [color=lightblue2 shape=box style=filled]
+	EE138 [color=lightblue2 shape=box style=filled]
+	PHYS040C -> EE138
+	PHYS040C [color=lightblue2 shape=box style=filled]
+	EE139 [color=lightblue2 shape=box style=filled]
+	PHYS040C -> EE139
+	EE110B [color=lightblue2 shape=box style=filled]
+	EE141 [color=lightblue2 shape=box style=filled]
+	EE110B -> EE141
+	EE001B [color=lightblue2 shape=box style=filled]
+	EE155 [color=lightblue2 shape=box style=filled]
+	EE001B -> EE155
+	EE116 [color=lightblue2 shape=box style=filled]
+	EE155 [color=lightblue2 shape=box style=filled]
+	EE116 -> EE155
+	CS120B [color=lightblue2 shape=box style=filled]
+	EE175A [color=lightblue2 shape=box style=filled]
+	CS120B -> EE175A [style=dashed]
+	EE120B [color=lightblue2 shape=box style=filled]
+	EE175A [color=lightblue2 shape=box style=filled]
+	EE120B -> EE175A [style=dashed]
+	subgraph cluster_30 {
+	}
+	EE175A [label=<EE175A<BR /><FONT POINT-SIZE="10">CS120B or EE120B</FONT>>]
+	BUS020 [color=lightblue2 shape=box style=filled]
+	BUS021 [color=lightblue2 shape=box style=filled]
+	BUS020 -> BUS021
+	ENGL001B [color=lightblue2 shape=box style=filled]
+	BUS100W [color=lightblue2 shape=box style=filled]
+	ENGL001B -> BUS100W
+	CS008 [color=lightblue2 shape=box style=filled]
+	BUS101 [color=lightblue2 shape=box style=filled]
+	CS008 -> BUS101
+	CS008 [color=lightblue2 shape=box style=filled]
+	BUS104 [color=lightblue2 shape=box style=filled]
+	CS008 -> BUS104
+	"Statistics 048" [color=lightblue2 shape=box style=filled]
+	BUS104 [color=lightblue2 shape=box style=filled]
+	"Statistics 048" -> BUS104 [style=dashed]
+	"Statistics 100A" [color=lightblue2 shape=box style=filled]
+	BUS104 [color=lightblue2 shape=box style=filled]
+	"Statistics 100A" -> BUS104 [style=dashed]
+	subgraph cluster_31 {
+	}
+	BUS104 [label=<BUS104<BR /><FONT POINT-SIZE="10">CS008</FONT>>]
+	BUS104 [color=lightblue2 shape=box style=filled]
+	BUS105 [color=lightblue2 shape=box style=filled]
+	BUS104 -> BUS105 [style=dashed]
+	"Statistics 104" [color=lightblue2 shape=box style=filled]
+	BUS105 [color=lightblue2 shape=box style=filled]
+	"Statistics 104" -> BUS105 [style=dashed]
+	subgraph cluster_32 {
+	}
+	BUS105 [label=<BUS105<BR /><FONT POINT-SIZE="10">BUS104 or Statistics 104</FONT>>]
+	BUS020 [color=lightblue2 shape=box style=filled]
+	BUS106 [color=lightblue2 shape=box style=filled]
+	BUS020 -> BUS106
+	"Economics 002" [color=lightblue2 shape=box style=filled]
+	BUS106 [color=lightblue2 shape=box style=filled]
+	"Economics 002" -> BUS106
+	"Economics 003" [color=lightblue2 shape=box style=filled]
+	BUS106 [color=lightblue2 shape=box style=filled]
+	"Economics 003" -> BUS106
+	"Economics 101" [color=lightblue2 shape=box style=filled]
+	BUS106 [color=lightblue2 shape=box style=filled]
+	"Economics 101" -> BUS106 [style=dashed]
+	"Statistics 048" [color=lightblue2 shape=box style=filled]
+	BUS106 [color=lightblue2 shape=box style=filled]
+	"Statistics 048" -> BUS106 [style=dashed]
+	subgraph cluster_33 {
+	}
+	BUS106 [label=<BUS106<BR /><FONT POINT-SIZE="10">BUS020</FONT>>]
+	BUS020 [color=lightblue2 shape=box style=filled]
+	BUS108 [color=lightblue2 shape=box style=filled]
+	BUS020 -> BUS108
+	BUS103 [color=lightblue2 shape=box style=filled]
+	BUS111 [color=lightblue2 shape=box style=filled]
+	BUS103 -> BUS111
+	BUS103 [color=lightblue2 shape=box style=filled]
+	BUS113 [color=lightblue2 shape=box style=filled]
+	BUS103 -> BUS113
+	BUS103 [color=lightblue2 shape=box style=filled]
+	BUS114 [color=lightblue2 shape=box style=filled]
+	BUS103 -> BUS114
+	BUS103 [color=lightblue2 shape=box style=filled]
+	BUS117 [color=lightblue2 shape=box style=filled]
+	BUS103 -> BUS117
+	BUS103 [color=lightblue2 shape=box style=filled]
+	BUS118 [color=lightblue2 shape=box style=filled]
+	BUS103 -> BUS118
+	BUS105 [color=lightblue2 shape=box style=filled]
+	BUS129 [color=lightblue2 shape=box style=filled]
+	BUS105 -> BUS129
+	BUS106 [color=lightblue2 shape=box style=filled]
+	BUS131 [color=lightblue2 shape=box style=filled]
+	BUS106 -> BUS131 [style=dashed]
+	"Economics 134" [color=lightblue2 shape=box style=filled]
+	BUS131 [color=lightblue2 shape=box style=filled]
+	"Economics 134" -> BUS131 [style=dashed]
+	subgraph cluster_34 {
+	}
+	BUS131 [label=<BUS131<BR /><FONT POINT-SIZE="10">BUS106 or Economics 134</FONT>>]
+	BUS132 [color=lightblue2 shape=box style=filled]
+	BUS131 [color=lightblue2 shape=box style=filled]
+	BUS132 -> BUS131
+	BUS020 [color=lightblue2 shape=box style=filled]
+	BUS132 [color=lightblue2 shape=box style=filled]
+	BUS020 -> BUS132
+	"Economics 101" [color=lightblue2 shape=box style=filled]
+	BUS132 [color=lightblue2 shape=box style=filled]
+	"Economics 101" -> BUS132 [style=dashed]
+	"Statistics 048" [color=lightblue2 shape=box style=filled]
+	BUS132 [color=lightblue2 shape=box style=filled]
+	"Statistics 048" -> BUS132 [style=dashed]
+	subgraph cluster_35 {
+	}
+	BUS132 [label=<BUS132<BR /><FONT POINT-SIZE="10">BUS020</FONT>>]
+	"Economics 102" [color=lightblue2 shape=box style=filled]
+	BUS132 [color=lightblue2 shape=box style=filled]
+	"Economics 102" -> BUS132 [style=dashed]
+	"Economics 103" [color=lightblue2 shape=box style=filled]
+	BUS132 [color=lightblue2 shape=box style=filled]
+	"Economics 103" -> BUS132 [style=dashed]
+	"Economics 104A" [color=lightblue2 shape=box style=filled]
+	BUS132 [color=lightblue2 shape=box style=filled]
+	"Economics 104A" -> BUS132 [style=dashed]
+	"Economics 105A" [color=lightblue2 shape=box style=filled]
+	BUS132 [color=lightblue2 shape=box style=filled]
+	"Economics 105A" -> BUS132 [style=dashed]
+	subgraph cluster_36 {
+	}
+	BUS132 [label=<BUS132<BR /><FONT POINT-SIZE="10">BUS020</FONT>>]
+	BUS106 [color=lightblue2 shape=box style=filled]
+	BUS136 [color=lightblue2 shape=box style=filled]
+	BUS106 -> BUS136 [style=dashed]
+	"Economics 134" [color=lightblue2 shape=box style=filled]
+	BUS136 [color=lightblue2 shape=box style=filled]
+	"Economics 134" -> BUS136 [style=dashed]
+	subgraph cluster_37 {
+	}
+	BUS136 [label=<BUS136<BR /><FONT POINT-SIZE="10">BUS106 or Economics 134</FONT>>]
+	BUS132 [color=lightblue2 shape=box style=filled]
+	BUS136 [color=lightblue2 shape=box style=filled]
+	BUS132 -> BUS136
+	BUS106 [color=lightblue2 shape=box style=filled]
+	BUS139 [color=lightblue2 shape=box style=filled]
+	BUS106 -> BUS139 [style=dashed]
+	"Economics 134" [color=lightblue2 shape=box style=filled]
+	BUS139 [color=lightblue2 shape=box style=filled]
+	"Economics 134" -> BUS139 [style=dashed]
+	subgraph cluster_38 {
+	}
+	BUS139 [label=<BUS139<BR /><FONT POINT-SIZE="10">BUS106 or Economics 134</FONT>>]
+	BUS107 [color=lightblue2 shape=box style=filled]
+	BUS155 [color=lightblue2 shape=box style=filled]
+	BUS107 -> BUS155
+	"Economics 102" [color=lightblue2 shape=box style=filled]
+	BUS162 [color=lightblue2 shape=box style=filled]
+	"Economics 102" -> BUS162 [style=dashed]
+	"Economics 104A" [color=lightblue2 shape=box style=filled]
+	BUS162 [color=lightblue2 shape=box style=filled]
+	"Economics 104A" -> BUS162 [style=dashed]
+	subgraph cluster_39 {
+	}
+	BUS162 [label=<BUS162<BR /><FONT POINT-SIZE="10">Economics 102 or Economics 104A</FONT>>]
+	BUS021 [color=lightblue2 shape=box style=filled]
+	BUS165A [color=lightblue2 shape=box style=filled]
+	BUS021 -> BUS165A
+	BUS165B [color=lightblue2 shape=box style=filled]
+	BUS165C [color=lightblue2 shape=box style=filled]
+	BUS165B -> BUS165C
+	BUS101 [color=lightblue2 shape=box style=filled]
+	BUS166 [color=lightblue2 shape=box style=filled]
+	BUS101 -> BUS166
+	BUS108 [color=lightblue2 shape=box style=filled]
+	BUS166 [color=lightblue2 shape=box style=filled]
+	BUS108 -> BUS166
+	BUS108 [color=lightblue2 shape=box style=filled]
+	BUS168A [color=lightblue2 shape=box style=filled]
+	BUS108 -> BUS168A
+	BUS165B [color=lightblue2 shape=box style=filled]
+	BUS169A [color=lightblue2 shape=box style=filled]
+	BUS165B -> BUS169A
+	BUS101 [color=lightblue2 shape=box style=filled]
+	BUS171 [color=lightblue2 shape=box style=filled]
+	BUS101 -> BUS171
+	BUS103 [color=lightblue2 shape=box style=filled]
+	BUS172 [color=lightblue2 shape=box style=filled]
+	BUS103 -> BUS172
+	"Economics 003" [color=lightblue2 shape=box style=filled]
+	BUS172 [color=lightblue2 shape=box style=filled]
+	"Economics 003" -> BUS172
+	"Economics 102" [color=lightblue2 shape=box style=filled]
+	BUS178 [color=lightblue2 shape=box style=filled]
+	"Economics 102" -> BUS178 [style=dashed]
+	"Economics 104A" [color=lightblue2 shape=box style=filled]
+	BUS178 [color=lightblue2 shape=box style=filled]
+	"Economics 104A" -> BUS178 [style=dashed]
+	subgraph cluster_40 {
+	}
+	BUS178 [label=<BUS178<BR /><FONT POINT-SIZE="10">Economics 102 or Economics 104A</FONT>>]
+	ME009 [color=lightblue2 shape=box style=filled]
+	ME175A [color=lightblue2 shape=box style=filled]
+	ME009 -> ME175A
+	ME175A [color=lightblue2 shape=box style=filled]
+	ME175B [color=lightblue2 shape=box style=filled]
+	ME175A -> ME175B
+	ME113 [color=lightblue2 shape=box style=filled]
+	ME175B [color=lightblue2 shape=box style=filled]
+	ME113 -> ME175B
+	ME116A [color=lightblue2 shape=box style=filled]
+	ME175B [color=lightblue2 shape=box style=filled]
+	ME116A -> ME175B
+	ME170A [color=lightblue2 shape=box style=filled]
+	ME175B [color=lightblue2 shape=box style=filled]
+	ME170A -> ME175B
+	ME174 [color=lightblue2 shape=box style=filled]
+	ME175B [color=lightblue2 shape=box style=filled]
+	ME174 -> ME175B
+	BIOL005B [color=lightblue2 shape=box style=filled]
+	BIOL100 [color=lightblue2 shape=box style=filled]
+	BIOL005B -> BIOL100
+	BIOL005C [color=lightblue2 shape=box style=filled]
+	BIOL100 [color=lightblue2 shape=box style=filled]
+	BIOL005C -> BIOL100
+	BIOL005A [color=lightblue2 shape=box style=filled]
+	BIOL102 [color=lightblue2 shape=box style=filled]
+	BIOL005A -> BIOL102
+	BIOL020 [color=lightblue2 shape=box style=filled]
+	BIOL102 [color=lightblue2 shape=box style=filled]
+	BIOL020 -> BIOL102 [style=dashed]
+	BIOL05LA [color=lightblue2 shape=box style=filled]
+	BIOL102 [color=lightblue2 shape=box style=filled]
+	BIOL05LA -> BIOL102 [style=dashed]
+	subgraph cluster_41 {
+	}
+	BIOL102 [label=<BIOL102<BR /><FONT POINT-SIZE="10">BIOL005A</FONT>>]
+	BIOL005B [color=lightblue2 shape=box style=filled]
+	BIOL102 [color=lightblue2 shape=box style=filled]
+	BIOL005B -> BIOL102
+	BIOL005C [color=lightblue2 shape=box style=filled]
+	BIOL104 [color=lightblue2 shape=box style=filled]
+	BIOL005C -> BIOL104
+	BIOL005C [color=lightblue2 shape=box style=filled]
+	BIOL105 [color=lightblue2 shape=box style=filled]
+	BIOL005C -> BIOL105
+	BIOL102 [color=lightblue2 shape=box style=filled]
+	BIOL105 [color=lightblue2 shape=box style=filled]
+	BIOL102 -> BIOL105
+	CHEM008C [color=lightblue2 shape=box style=filled]
+	BIOL105 [color=lightblue2 shape=box style=filled]
+	CHEM008C -> BIOL105
+	CHEM08LC [color=lightblue2 shape=box style=filled]
+	BIOL105 [color=lightblue2 shape=box style=filled]
+	CHEM08LC -> BIOL105 [style=dashed]
+	CHEM08HC [color=lightblue2 shape=box style=filled]
+	BIOL105 [color=lightblue2 shape=box style=filled]
+	CHEM08HC -> BIOL105 [style=dashed]
+	subgraph cluster_42 {
+	}
+	BIOL105 [label=<BIOL105<BR /><FONT POINT-SIZE="10">BIOL005C</FONT>>]
+	CHEM08HLC [color=lightblue2 shape=box style=filled]
+	BIOL105 [color=lightblue2 shape=box style=filled]
+	CHEM08HLC -> BIOL105 [style=dashed]
+	CHEM12HC [color=lightblue2 shape=box style=filled]
+	BIOL105 [color=lightblue2 shape=box style=filled]
+	CHEM12HC -> BIOL105 [style=dashed]
+	CHEM12C [color=lightblue2 shape=box style=filled]
+	BIOL105 [color=lightblue2 shape=box style=filled]
+	CHEM12C -> BIOL105 [style=dashed]
+	subgraph cluster_43 {
+	}
+	BIOL105 [label=<BIOL105<BR /><FONT POINT-SIZE="10">BIOL005C</FONT>>]
+	MATH007B [color=lightblue2 shape=box style=filled]
+	BIOL105 [color=lightblue2 shape=box style=filled]
+	MATH007B -> BIOL105 [style=dashed]
+	MATH009B [color=gold shape=box style=filled]
+	BIOL105 [color=lightblue2 shape=box style=filled]
+	MATH009B -> BIOL105 [style=dashed]
+	MATH09HB [color=lightblue2 shape=box style=filled]
+	BIOL105 [color=lightblue2 shape=box style=filled]
+	MATH09HB -> BIOL105 [style=dashed]
+	subgraph cluster_44 {
+	}
+	BIOL105 [label=<BIOL105<BR /><FONT POINT-SIZE="10">BIOL005C</FONT>>]
+	PHYS002C [color=lightblue2 shape=box style=filled]
+	BIOL105 [color=lightblue2 shape=box style=filled]
+	PHYS002C -> BIOL105
+	PHYS02LC [color=lightblue2 shape=box style=filled]
+	BIOL105 [color=lightblue2 shape=box style=filled]
+	PHYS02LC -> BIOL105
+	"Biochemistry 100" [color=lightblue2 shape=box style=filled]
+	BIOL105 [color=lightblue2 shape=box style=filled]
+	"Biochemistry 100" -> BIOL105 [style=dashed]
+	"Biochemistry 110A" [color=lightblue2 shape=box style=filled]
+	BIOL105 [color=lightblue2 shape=box style=filled]
+	"Biochemistry 110A" -> BIOL105 [style=dashed]
+	subgraph cluster_45 {
+	}
+	BIOL105 [label=<BIOL105<BR /><FONT POINT-SIZE="10">BIOL005C</FONT>>]
+	BIOL005A [color=lightblue2 shape=box style=filled]
+	BIOL107A [color=lightblue2 shape=box style=filled]
+	BIOL005A -> BIOL107A
+	BIOL005B [color=lightblue2 shape=box style=filled]
+	BIOL107A [color=lightblue2 shape=box style=filled]
+	BIOL005B -> BIOL107A
+	BIOL005C [color=lightblue2 shape=box style=filled]
+	BIOL107A [color=lightblue2 shape=box style=filled]
+	BIOL005C -> BIOL107A
+	CHEM001C [color=gold shape=box style=filled]
+	BIOL107A [color=lightblue2 shape=box style=filled]
+	CHEM001C -> BIOL107A [style=dashed]
+	CHEM01HC [color=lightblue2 shape=box style=filled]
+	BIOL107A [color=lightblue2 shape=box style=filled]
+	CHEM01HC -> BIOL107A [style=dashed]
+	subgraph cluster_46 {
+	}
+	BIOL107A [label=<BIOL107A<BR /><FONT POINT-SIZE="10">BIOL005A</FONT>>]
+	CHEM008C [color=lightblue2 shape=box style=filled]
+	BIOL107A [color=lightblue2 shape=box style=filled]
+	CHEM008C -> BIOL107A
+	CHEM08LC [color=lightblue2 shape=box style=filled]
+	BIOL107A [color=lightblue2 shape=box style=filled]
+	CHEM08LC -> BIOL107A [style=dashed]
+	CHEM08HC [color=lightblue2 shape=box style=filled]
+	BIOL107A [color=lightblue2 shape=box style=filled]
+	CHEM08HC -> BIOL107A [style=dashed]
+	subgraph cluster_47 {
+	}
+	BIOL107A [label=<BIOL107A<BR /><FONT POINT-SIZE="10">BIOL005A</FONT>>]
+	CHEM08HLC [color=lightblue2 shape=box style=filled]
+	BIOL107A [color=lightblue2 shape=box style=filled]
+	CHEM08HLC -> BIOL107A [style=dashed]
+	CHEM12HC [color=lightblue2 shape=box style=filled]
+	BIOL107A [color=lightblue2 shape=box style=filled]
+	CHEM12HC -> BIOL107A [style=dashed]
+	CHEM12C [color=lightblue2 shape=box style=filled]
+	BIOL107A [color=lightblue2 shape=box style=filled]
+	CHEM12C -> BIOL107A [style=dashed]
+	subgraph cluster_48 {
+	}
+	BIOL107A [label=<BIOL107A<BR /><FONT POINT-SIZE="10">BIOL005A</FONT>>]
+	MATH09HB [color=lightblue2 shape=box style=filled]
+	BIOL107A [color=lightblue2 shape=box style=filled]
+	MATH09HB -> BIOL107A [style=dashed]
+	MATH007B [color=lightblue2 shape=box style=filled]
+	BIOL107A [color=lightblue2 shape=box style=filled]
+	MATH007B -> BIOL107A [style=dashed]
+	MATH009B [color=gold shape=box style=filled]
+	BIOL107A [color=lightblue2 shape=box style=filled]
+	MATH009B -> BIOL107A [style=dashed]
+	subgraph cluster_49 {
+	}
+	BIOL107A [label=<BIOL107A<BR /><FONT POINT-SIZE="10">BIOL005A</FONT>>]
+	PHYS002C [color=lightblue2 shape=box style=filled]
+	BIOL107A [color=lightblue2 shape=box style=filled]
+	PHYS002C -> BIOL107A
+	PHYS02LC [color=lightblue2 shape=box style=filled]
+	BIOL107A [color=lightblue2 shape=box style=filled]
+	PHYS02LC -> BIOL107A
+	"Biochemistry 100" [color=lightblue2 shape=box style=filled]
+	BIOL107A [color=lightblue2 shape=box style=filled]
+	"Biochemistry 100" -> BIOL107A [style=dashed]
+	"Biochemistry 110A" [color=lightblue2 shape=box style=filled]
+	BIOL107A [color=lightblue2 shape=box style=filled]
+	"Biochemistry 110A" -> BIOL107A [style=dashed]
+	subgraph cluster_50 {
+	}
+	BIOL107A [label=<BIOL107A<BR /><FONT POINT-SIZE="10">BIOL005A</FONT>>]
+	BIOL005A [color=lightblue2 shape=box style=filled]
+	BIOL108 [color=lightblue2 shape=box style=filled]
+	BIOL005A -> BIOL108
+	BIOL005B [color=lightblue2 shape=box style=filled]
+	BIOL108 [color=lightblue2 shape=box style=filled]
+	BIOL005B -> BIOL108
+	BIOL005C [color=lightblue2 shape=box style=filled]
+	BIOL108 [color=lightblue2 shape=box style=filled]
+	BIOL005C -> BIOL108
+	CHEM001C [color=gold shape=box style=filled]
+	BIOL108 [color=lightblue2 shape=box style=filled]
+	CHEM001C -> BIOL108 [style=dashed]
+	CHEM01HC [color=lightblue2 shape=box style=filled]
+	BIOL108 [color=lightblue2 shape=box style=filled]
+	CHEM01HC -> BIOL108 [style=dashed]
+	subgraph cluster_51 {
+	}
+	BIOL108 [label=<BIOL108<BR /><FONT POINT-SIZE="10">BIOL005A</FONT>>]
+	CHEM008C [color=lightblue2 shape=box style=filled]
+	BIOL108 [color=lightblue2 shape=box style=filled]
+	CHEM008C -> BIOL108
+	CHEM08LC [color=lightblue2 shape=box style=filled]
+	BIOL108 [color=lightblue2 shape=box style=filled]
+	CHEM08LC -> BIOL108 [style=dashed]
+	CHEM08HC [color=lightblue2 shape=box style=filled]
+	BIOL108 [color=lightblue2 shape=box style=filled]
+	CHEM08HC -> BIOL108 [style=dashed]
+	subgraph cluster_52 {
+	}
+	BIOL108 [label=<BIOL108<BR /><FONT POINT-SIZE="10">BIOL005A</FONT>>]
+	CHEM08HLC [color=lightblue2 shape=box style=filled]
+	BIOL108 [color=lightblue2 shape=box style=filled]
+	CHEM08HLC -> BIOL108 [style=dashed]
+	CHEM12HC [color=lightblue2 shape=box style=filled]
+	BIOL108 [color=lightblue2 shape=box style=filled]
+	CHEM12HC -> BIOL108 [style=dashed]
+	CHEM12C [color=lightblue2 shape=box style=filled]
+	BIOL108 [color=lightblue2 shape=box style=filled]
+	CHEM12C -> BIOL108 [style=dashed]
+	subgraph cluster_53 {
+	}
+	BIOL108 [label=<BIOL108<BR /><FONT POINT-SIZE="10">BIOL005A</FONT>>]
+	MATH007B [color=lightblue2 shape=box style=filled]
+	BIOL108 [color=lightblue2 shape=box style=filled]
+	MATH007B -> BIOL108 [style=dashed]
+	MATH009B [color=gold shape=box style=filled]
+	BIOL108 [color=lightblue2 shape=box style=filled]
+	MATH009B -> BIOL108 [style=dashed]
+	MATH09HB [color=lightblue2 shape=box style=filled]
+	BIOL108 [color=lightblue2 shape=box style=filled]
+	MATH09HB -> BIOL108 [style=dashed]
+	subgraph cluster_54 {
+	}
+	BIOL108 [label=<BIOL108<BR /><FONT POINT-SIZE="10">BIOL005A</FONT>>]
+	PHYS002C [color=lightblue2 shape=box style=filled]
+	BIOL108 [color=lightblue2 shape=box style=filled]
+	PHYS002C -> BIOL108
+	PHYS02LC [color=lightblue2 shape=box style=filled]
+	BIOL108 [color=lightblue2 shape=box style=filled]
+	PHYS02LC -> BIOL108
+	BIOL005C [color=lightblue2 shape=box style=filled]
+	BIOL116 [color=lightblue2 shape=box style=filled]
+	BIOL005C -> BIOL116
+	CHEM001C [color=gold shape=box style=filled]
+	BIOL116 [color=lightblue2 shape=box style=filled]
+	CHEM001C -> BIOL116 [style=dashed]
+	CHEM01HC [color=lightblue2 shape=box style=filled]
+	BIOL116 [color=lightblue2 shape=box style=filled]
+	CHEM01HC -> BIOL116 [style=dashed]
+	subgraph cluster_55 {
+	}
+	BIOL116 [label=<BIOL116<BR /><FONT POINT-SIZE="10">BIOL005C</FONT>>]
+	MATH007B [color=lightblue2 shape=box style=filled]
+	BIOL116 [color=lightblue2 shape=box style=filled]
+	MATH007B -> BIOL116 [style=dashed]
+	MATH009B [color=gold shape=box style=filled]
+	BIOL116 [color=lightblue2 shape=box style=filled]
+	MATH009B -> BIOL116 [style=dashed]
+	MATH09HB [color=lightblue2 shape=box style=filled]
+	BIOL116 [color=lightblue2 shape=box style=filled]
+	MATH09HB -> BIOL116 [style=dashed]
+	subgraph cluster_56 {
+	}
+	BIOL116 [label=<BIOL116<BR /><FONT POINT-SIZE="10">BIOL005C</FONT>>]
+	BIOL005C [color=lightblue2 shape=box style=filled]
+	BIOL119 [color=lightblue2 shape=box style=filled]
+	BIOL005C -> BIOL119
+	BIOL102 [color=lightblue2 shape=box style=filled]
+	BIOL119 [color=lightblue2 shape=box style=filled]
+	BIOL102 -> BIOL119
+	CHEM001C [color=gold shape=box style=filled]
+	BIOL119 [color=lightblue2 shape=box style=filled]
+	CHEM001C -> BIOL119 [style=dashed]
+	CHEM01HC [color=lightblue2 shape=box style=filled]
+	BIOL119 [color=lightblue2 shape=box style=filled]
+	CHEM01HC -> BIOL119 [style=dashed]
+	subgraph cluster_57 {
+	}
+	BIOL119 [label=<BIOL119<BR /><FONT POINT-SIZE="10">BIOL005C</FONT>>]
+	CHEM008C [color=lightblue2 shape=box style=filled]
+	BIOL119 [color=lightblue2 shape=box style=filled]
+	CHEM008C -> BIOL119
+	CHEM08LC [color=lightblue2 shape=box style=filled]
+	BIOL119 [color=lightblue2 shape=box style=filled]
+	CHEM08LC -> BIOL119 [style=dashed]
+	CHEM08HC [color=lightblue2 shape=box style=filled]
+	BIOL119 [color=lightblue2 shape=box style=filled]
+	CHEM08HC -> BIOL119 [style=dashed]
+	subgraph cluster_58 {
+	}
+	BIOL119 [label=<BIOL119<BR /><FONT POINT-SIZE="10">BIOL005C</FONT>>]
+	CHEM08HLC [color=lightblue2 shape=box style=filled]
+	BIOL119 [color=lightblue2 shape=box style=filled]
+	CHEM08HLC -> BIOL119 [style=dashed]
+	CHEM12HC [color=lightblue2 shape=box style=filled]
+	BIOL119 [color=lightblue2 shape=box style=filled]
+	CHEM12HC -> BIOL119 [style=dashed]
+	CHEM12C [color=lightblue2 shape=box style=filled]
+	BIOL119 [color=lightblue2 shape=box style=filled]
+	CHEM12C -> BIOL119 [style=dashed]
+	subgraph cluster_59 {
+	}
+	BIOL119 [label=<BIOL119<BR /><FONT POINT-SIZE="10">BIOL005C</FONT>>]
+	MATH007B [color=lightblue2 shape=box style=filled]
+	BIOL119 [color=lightblue2 shape=box style=filled]
+	MATH007B -> BIOL119 [style=dashed]
+	MATH009B [color=gold shape=box style=filled]
+	BIOL119 [color=lightblue2 shape=box style=filled]
+	MATH009B -> BIOL119 [style=dashed]
+	MATH09HB [color=lightblue2 shape=box style=filled]
+	BIOL119 [color=lightblue2 shape=box style=filled]
+	MATH09HB -> BIOL119 [style=dashed]
+	subgraph cluster_60 {
+	}
+	BIOL119 [label=<BIOL119<BR /><FONT POINT-SIZE="10">BIOL005C</FONT>>]
+	PHYS002C [color=lightblue2 shape=box style=filled]
+	BIOL119 [color=lightblue2 shape=box style=filled]
+	PHYS002C -> BIOL119
+	PHYS02LC [color=lightblue2 shape=box style=filled]
+	BIOL119 [color=lightblue2 shape=box style=filled]
+	PHYS02LC -> BIOL119
+	"Biochemistry 100" [color=lightblue2 shape=box style=filled]
+	BIOL119 [color=lightblue2 shape=box style=filled]
+	"Biochemistry 100" -> BIOL119 [style=dashed]
+	"Biochemistry 110A" [color=lightblue2 shape=box style=filled]
+	BIOL119 [color=lightblue2 shape=box style=filled]
+	"Biochemistry 110A" -> BIOL119 [style=dashed]
+	subgraph cluster_61 {
+	}
+	BIOL119 [label=<BIOL119<BR /><FONT POINT-SIZE="10">BIOL005C</FONT>>]
+	BIOL005A [color=lightblue2 shape=box style=filled]
+	BIOL120 [color=lightblue2 shape=box style=filled]
+	BIOL005A -> BIOL120
+	BIOL05LA [color=lightblue2 shape=box style=filled]
+	BIOL120 [color=lightblue2 shape=box style=filled]
+	BIOL05LA -> BIOL120 [style=dashed]
+	BIOL020 [color=lightblue2 shape=box style=filled]
+	BIOL120 [color=lightblue2 shape=box style=filled]
+	BIOL020 -> BIOL120 [style=dashed]
+	subgraph cluster_62 {
+	}
+	BIOL120 [label=<BIOL120<BR /><FONT POINT-SIZE="10">BIOL005A</FONT>>]
+	BIOL005B [color=lightblue2 shape=box style=filled]
+	BIOL120 [color=lightblue2 shape=box style=filled]
+	BIOL005B -> BIOL120
+	BIOL005C [color=lightblue2 shape=box style=filled]
+	BIOL120 [color=lightblue2 shape=box style=filled]
+	BIOL005C -> BIOL120
+	CHEM001C [color=gold shape=box style=filled]
+	BIOL120 [color=lightblue2 shape=box style=filled]
+	CHEM001C -> BIOL120 [style=dashed]
+	CHEM01HC [color=lightblue2 shape=box style=filled]
+	BIOL120 [color=lightblue2 shape=box style=filled]
+	CHEM01HC -> BIOL120 [style=dashed]
+	subgraph cluster_63 {
+	}
+	BIOL120 [label=<BIOL120<BR /><FONT POINT-SIZE="10">BIOL005A</FONT>>]
+	CHEM008C [color=lightblue2 shape=box style=filled]
+	BIOL120 [color=lightblue2 shape=box style=filled]
+	CHEM008C -> BIOL120
+	CHEM08LC [color=lightblue2 shape=box style=filled]
+	BIOL120 [color=lightblue2 shape=box style=filled]
+	CHEM08LC -> BIOL120 [style=dashed]
+	CHEM08HC [color=lightblue2 shape=box style=filled]
+	BIOL120 [color=lightblue2 shape=box style=filled]
+	CHEM08HC -> BIOL120 [style=dashed]
+	subgraph cluster_64 {
+	}
+	BIOL120 [label=<BIOL120<BR /><FONT POINT-SIZE="10">BIOL005A</FONT>>]
+	CHEM08HLC [color=lightblue2 shape=box style=filled]
+	BIOL120 [color=lightblue2 shape=box style=filled]
+	CHEM08HLC -> BIOL120 [style=dashed]
+	CHEM12HC [color=lightblue2 shape=box style=filled]
+	BIOL120 [color=lightblue2 shape=box style=filled]
+	CHEM12HC -> BIOL120 [style=dashed]
+	CHEM12C [color=lightblue2 shape=box style=filled]
+	BIOL120 [color=lightblue2 shape=box style=filled]
+	CHEM12C -> BIOL120 [style=dashed]
+	subgraph cluster_65 {
+	}
+	BIOL120 [label=<BIOL120<BR /><FONT POINT-SIZE="10">BIOL005A</FONT>>]
+	MATH007B [color=lightblue2 shape=box style=filled]
+	BIOL120 [color=lightblue2 shape=box style=filled]
+	MATH007B -> BIOL120 [style=dashed]
+	MATH009B [color=gold shape=box style=filled]
+	BIOL120 [color=lightblue2 shape=box style=filled]
+	MATH009B -> BIOL120 [style=dashed]
+	MATH09HB [color=lightblue2 shape=box style=filled]
+	BIOL120 [color=lightblue2 shape=box style=filled]
+	MATH09HB -> BIOL120 [style=dashed]
+	subgraph cluster_66 {
+	}
+	BIOL120 [label=<BIOL120<BR /><FONT POINT-SIZE="10">BIOL005A</FONT>>]
+	PHYS002C [color=lightblue2 shape=box style=filled]
+	BIOL120 [color=lightblue2 shape=box style=filled]
+	PHYS002C -> BIOL120
+	PHYS02LC [color=lightblue2 shape=box style=filled]
+	BIOL120 [color=lightblue2 shape=box style=filled]
+	PHYS02LC -> BIOL120
+	"Biochemistry 100" [color=lightblue2 shape=box style=filled]
+	BIOL120 [color=lightblue2 shape=box style=filled]
+	"Biochemistry 100" -> BIOL120 [style=dashed]
+	"Biochemistry 110A" [color=lightblue2 shape=box style=filled]
+	BIOL120 [color=lightblue2 shape=box style=filled]
+	"Biochemistry 110A" -> BIOL120 [style=dashed]
+	subgraph cluster_67 {
+	}
+	BIOL120 [label=<BIOL120<BR /><FONT POINT-SIZE="10">BIOL005A</FONT>>]
+	BIOL005A [color=lightblue2 shape=box style=filled]
+	BIOL121 [color=lightblue2 shape=box style=filled]
+	BIOL005A -> BIOL121
+	BIOL005B [color=lightblue2 shape=box style=filled]
+	BIOL121 [color=lightblue2 shape=box style=filled]
+	BIOL005B -> BIOL121
+	BIOL005C [color=lightblue2 shape=box style=filled]
+	BIOL121 [color=lightblue2 shape=box style=filled]
+	BIOL005C -> BIOL121
+	BIOL05LA [color=lightblue2 shape=box style=filled]
+	BIOL121 [color=lightblue2 shape=box style=filled]
+	BIOL05LA -> BIOL121 [style=dashed]
+	BIOL020 [color=lightblue2 shape=box style=filled]
+	BIOL121 [color=lightblue2 shape=box style=filled]
+	BIOL020 -> BIOL121 [style=dashed]
+	subgraph cluster_68 {
+	}
+	BIOL121 [label=<BIOL121<BR /><FONT POINT-SIZE="10">BIOL005A</FONT>>]
+	CHEM001C [color=gold shape=box style=filled]
+	BIOL121 [color=lightblue2 shape=box style=filled]
+	CHEM001C -> BIOL121 [style=dashed]
+	CHEM01HC [color=lightblue2 shape=box style=filled]
+	BIOL121 [color=lightblue2 shape=box style=filled]
+	CHEM01HC -> BIOL121 [style=dashed]
+	subgraph cluster_69 {
+	}
+	BIOL121 [label=<BIOL121<BR /><FONT POINT-SIZE="10">BIOL005A</FONT>>]
+	CHEM008C [color=lightblue2 shape=box style=filled]
+	BIOL121 [color=lightblue2 shape=box style=filled]
+	CHEM008C -> BIOL121
+	CHEM08LC [color=lightblue2 shape=box style=filled]
+	BIOL121 [color=lightblue2 shape=box style=filled]
+	CHEM08LC -> BIOL121 [style=dashed]
+	CHEM08HC [color=lightblue2 shape=box style=filled]
+	BIOL121 [color=lightblue2 shape=box style=filled]
+	CHEM08HC -> BIOL121 [style=dashed]
+	subgraph cluster_70 {
+	}
+	BIOL121 [label=<BIOL121<BR /><FONT POINT-SIZE="10">BIOL005A</FONT>>]
+	CHEM08HLC [color=lightblue2 shape=box style=filled]
+	BIOL121 [color=lightblue2 shape=box style=filled]
+	CHEM08HLC -> BIOL121 [style=dashed]
+	CHEM12HC [color=lightblue2 shape=box style=filled]
+	BIOL121 [color=lightblue2 shape=box style=filled]
+	CHEM12HC -> BIOL121 [style=dashed]
+	CHEM12C [color=lightblue2 shape=box style=filled]
+	BIOL121 [color=lightblue2 shape=box style=filled]
+	CHEM12C -> BIOL121 [style=dashed]
+	subgraph cluster_71 {
+	}
+	BIOL121 [label=<BIOL121<BR /><FONT POINT-SIZE="10">BIOL005A</FONT>>]
+	MATH007B [color=lightblue2 shape=box style=filled]
+	BIOL121 [color=lightblue2 shape=box style=filled]
+	MATH007B -> BIOL121 [style=dashed]
+	MATH009B [color=gold shape=box style=filled]
+	BIOL121 [color=lightblue2 shape=box style=filled]
+	MATH009B -> BIOL121 [style=dashed]
+	MATH09HB [color=lightblue2 shape=box style=filled]
+	BIOL121 [color=lightblue2 shape=box style=filled]
+	MATH09HB -> BIOL121 [style=dashed]
+	subgraph cluster_72 {
+	}
+	BIOL121 [label=<BIOL121<BR /><FONT POINT-SIZE="10">BIOL005A</FONT>>]
+	PHYS002C [color=lightblue2 shape=box style=filled]
+	BIOL121 [color=lightblue2 shape=box style=filled]
+	PHYS002C -> BIOL121
+	PHYS02LC [color=lightblue2 shape=box style=filled]
+	BIOL121 [color=lightblue2 shape=box style=filled]
+	PHYS02LC -> BIOL121
+	"Biochemistry 100" [color=lightblue2 shape=box style=filled]
+	BIOL121 [color=lightblue2 shape=box style=filled]
+	"Biochemistry 100" -> BIOL121 [style=dashed]
+	"Biochemistry 110A" [color=lightblue2 shape=box style=filled]
+	BIOL121 [color=lightblue2 shape=box style=filled]
+	"Biochemistry 110A" -> BIOL121 [style=dashed]
+	subgraph cluster_73 {
+	}
+	BIOL121 [label=<BIOL121<BR /><FONT POINT-SIZE="10">BIOL005A</FONT>>]
+	"Biochemistry 100" [color=lightblue2 shape=box style=filled]
+	BIOL128 [color=lightblue2 shape=box style=filled]
+	"Biochemistry 100" -> BIOL128 [style=dashed]
+	"Biochemistry 110A" [color=lightblue2 shape=box style=filled]
+	BIOL128 [color=lightblue2 shape=box style=filled]
+	"Biochemistry 110A" -> BIOL128 [style=dashed]
+	subgraph cluster_74 {
+	}
+	BIOL128 [label=<BIOL128<BR /><FONT POINT-SIZE="10">Biochemistry 100 or Biochemistry 110A</FONT>>]
+	BIOL005C [color=lightblue2 shape=box style=filled]
+	BIOL128 [color=lightblue2 shape=box style=filled]
+	BIOL005C -> BIOL128
+	PHYS002C [color=lightblue2 shape=box style=filled]
+	BIOL128 [color=lightblue2 shape=box style=filled]
+	PHYS002C -> BIOL128
+	PHYS02LC [color=lightblue2 shape=box style=filled]
+	BIOL128 [color=lightblue2 shape=box style=filled]
+	PHYS02LC -> BIOL128
+	BIOL005A [color=lightblue2 shape=box style=filled]
+	BIOL134 [color=lightblue2 shape=box style=filled]
+	BIOL005A -> BIOL134
+	BIOL005B [color=lightblue2 shape=box style=filled]
+	BIOL134 [color=lightblue2 shape=box style=filled]
+	BIOL005B -> BIOL134
+	BIOL005C [color=lightblue2 shape=box style=filled]
+	BIOL134 [color=lightblue2 shape=box style=filled]
+	BIOL005C -> BIOL134
+	BIOL05LA [color=lightblue2 shape=box style=filled]
+	BIOL134 [color=lightblue2 shape=box style=filled]
+	BIOL05LA -> BIOL134 [style=dashed]
+	BIOL020 [color=lightblue2 shape=box style=filled]
+	BIOL134 [color=lightblue2 shape=box style=filled]
+	BIOL020 -> BIOL134 [style=dashed]
+	subgraph cluster_75 {
+	}
+	BIOL134 [label=<BIOL134<BR /><FONT POINT-SIZE="10">BIOL005A</FONT>>]
+	CHEM001C [color=gold shape=box style=filled]
+	BIOL134 [color=lightblue2 shape=box style=filled]
+	CHEM001C -> BIOL134 [style=dashed]
+	CHEM01HC [color=lightblue2 shape=box style=filled]
+	BIOL134 [color=lightblue2 shape=box style=filled]
+	CHEM01HC -> BIOL134 [style=dashed]
+	subgraph cluster_76 {
+	}
+	BIOL134 [label=<BIOL134<BR /><FONT POINT-SIZE="10">BIOL005A</FONT>>]
+	CHEM008C [color=lightblue2 shape=box style=filled]
+	BIOL134 [color=lightblue2 shape=box style=filled]
+	CHEM008C -> BIOL134
+	CHEM08LC [color=lightblue2 shape=box style=filled]
+	BIOL134 [color=lightblue2 shape=box style=filled]
+	CHEM08LC -> BIOL134 [style=dashed]
+	CHEM08HC [color=lightblue2 shape=box style=filled]
+	BIOL134 [color=lightblue2 shape=box style=filled]
+	CHEM08HC -> BIOL134 [style=dashed]
+	subgraph cluster_77 {
+	}
+	BIOL134 [label=<BIOL134<BR /><FONT POINT-SIZE="10">BIOL005A</FONT>>]
+	CHEM08HLC [color=lightblue2 shape=box style=filled]
+	BIOL134 [color=lightblue2 shape=box style=filled]
+	CHEM08HLC -> BIOL134 [style=dashed]
+	CHEM12HC [color=lightblue2 shape=box style=filled]
+	BIOL134 [color=lightblue2 shape=box style=filled]
+	CHEM12HC -> BIOL134 [style=dashed]
+	CHEM12C [color=lightblue2 shape=box style=filled]
+	BIOL134 [color=lightblue2 shape=box style=filled]
+	CHEM12C -> BIOL134 [style=dashed]
+	subgraph cluster_78 {
+	}
+	BIOL134 [label=<BIOL134<BR /><FONT POINT-SIZE="10">BIOL005A</FONT>>]
+	MATH007B [color=lightblue2 shape=box style=filled]
+	BIOL134 [color=lightblue2 shape=box style=filled]
+	MATH007B -> BIOL134 [style=dashed]
+	MATH009B [color=gold shape=box style=filled]
+	BIOL134 [color=lightblue2 shape=box style=filled]
+	MATH009B -> BIOL134 [style=dashed]
+	MATH09HB [color=lightblue2 shape=box style=filled]
+	BIOL134 [color=lightblue2 shape=box style=filled]
+	MATH09HB -> BIOL134 [style=dashed]
+	subgraph cluster_79 {
+	}
+	BIOL134 [label=<BIOL134<BR /><FONT POINT-SIZE="10">BIOL005A</FONT>>]
+	PHYS002C [color=lightblue2 shape=box style=filled]
+	BIOL134 [color=lightblue2 shape=box style=filled]
+	PHYS002C -> BIOL134
+	PHYS02LC [color=lightblue2 shape=box style=filled]
+	BIOL134 [color=lightblue2 shape=box style=filled]
+	PHYS02LC -> BIOL134
+	"Biochemistry 100" [color=lightblue2 shape=box style=filled]
+	BIOL134 [color=lightblue2 shape=box style=filled]
+	"Biochemistry 100" -> BIOL134 [style=dashed]
+	"Biochemistry 110A" [color=lightblue2 shape=box style=filled]
+	BIOL134 [color=lightblue2 shape=box style=filled]
+	"Biochemistry 110A" -> BIOL134 [style=dashed]
+	subgraph cluster_80 {
+	}
+	BIOL134 [label=<BIOL134<BR /><FONT POINT-SIZE="10">BIOL005A</FONT>>]
+	BIOL005A [color=lightblue2 shape=box style=filled]
+	BIOL143 [color=lightblue2 shape=box style=filled]
+	BIOL005A -> BIOL143
+	BIOL005B [color=lightblue2 shape=box style=filled]
+	BIOL143 [color=lightblue2 shape=box style=filled]
+	BIOL005B -> BIOL143
+	BIOL005C [color=lightblue2 shape=box style=filled]
+	BIOL143 [color=lightblue2 shape=box style=filled]
+	BIOL005C -> BIOL143
+	CHEM001C [color=gold shape=box style=filled]
+	BIOL143 [color=lightblue2 shape=box style=filled]
+	CHEM001C -> BIOL143 [style=dashed]
+	CHEM01HC [color=lightblue2 shape=box style=filled]
+	BIOL143 [color=lightblue2 shape=box style=filled]
+	CHEM01HC -> BIOL143 [style=dashed]
+	subgraph cluster_81 {
+	}
+	BIOL143 [label=<BIOL143<BR /><FONT POINT-SIZE="10">BIOL005A</FONT>>]
+	CHEM008C [color=lightblue2 shape=box style=filled]
+	BIOL143 [color=lightblue2 shape=box style=filled]
+	CHEM008C -> BIOL143
+	CHEM08LC [color=lightblue2 shape=box style=filled]
+	BIOL143 [color=lightblue2 shape=box style=filled]
+	CHEM08LC -> BIOL143 [style=dashed]
+	CHEM08HC [color=lightblue2 shape=box style=filled]
+	BIOL143 [color=lightblue2 shape=box style=filled]
+	CHEM08HC -> BIOL143 [style=dashed]
+	subgraph cluster_82 {
+	}
+	BIOL143 [label=<BIOL143<BR /><FONT POINT-SIZE="10">BIOL005A</FONT>>]
+	CHEM08HLC [color=lightblue2 shape=box style=filled]
+	BIOL143 [color=lightblue2 shape=box style=filled]
+	CHEM08HLC -> BIOL143 [style=dashed]
+	CHEM12HC [color=lightblue2 shape=box style=filled]
+	BIOL143 [color=lightblue2 shape=box style=filled]
+	CHEM12HC -> BIOL143 [style=dashed]
+	CHEM12C [color=lightblue2 shape=box style=filled]
+	BIOL143 [color=lightblue2 shape=box style=filled]
+	CHEM12C -> BIOL143 [style=dashed]
+	subgraph cluster_83 {
+	}
+	BIOL143 [label=<BIOL143<BR /><FONT POINT-SIZE="10">BIOL005A</FONT>>]
+	MATH007B [color=lightblue2 shape=box style=filled]
+	BIOL143 [color=lightblue2 shape=box style=filled]
+	MATH007B -> BIOL143 [style=dashed]
+	MATH009B [color=gold shape=box style=filled]
+	BIOL143 [color=lightblue2 shape=box style=filled]
+	MATH009B -> BIOL143 [style=dashed]
+	MATH09HB [color=lightblue2 shape=box style=filled]
+	BIOL143 [color=lightblue2 shape=box style=filled]
+	MATH09HB -> BIOL143 [style=dashed]
+	subgraph cluster_84 {
+	}
+	BIOL143 [label=<BIOL143<BR /><FONT POINT-SIZE="10">BIOL005A</FONT>>]
+	PHYS002C [color=lightblue2 shape=box style=filled]
+	BIOL143 [color=lightblue2 shape=box style=filled]
+	PHYS002C -> BIOL143
+	PHYS02LC [color=lightblue2 shape=box style=filled]
+	BIOL143 [color=lightblue2 shape=box style=filled]
+	PHYS02LC -> BIOL143
+	"Biochemistry 100" [color=lightblue2 shape=box style=filled]
+	BIOL143 [color=lightblue2 shape=box style=filled]
+	"Biochemistry 100" -> BIOL143 [style=dashed]
+	"Biochemistry 110A" [color=lightblue2 shape=box style=filled]
+	BIOL143 [color=lightblue2 shape=box style=filled]
+	"Biochemistry 110A" -> BIOL143 [style=dashed]
+	subgraph cluster_85 {
+	}
+	BIOL143 [label=<BIOL143<BR /><FONT POINT-SIZE="10">BIOL005A</FONT>>]
+	BIOL104 [color=lightblue2 shape=box style=filled]
+	BIOL143 [color=lightblue2 shape=box style=filled]
+	BIOL104 -> BIOL143 [style=dashed]
+	"Botany/Plant Science 104" [color=lightblue2 shape=box style=filled]
+	BIOL143 [color=lightblue2 shape=box style=filled]
+	"Botany/Plant Science 104" -> BIOL143 [style=dashed]
+	subgraph cluster_86 {
+	}
+	BIOL143 [label=<BIOL143<BR /><FONT POINT-SIZE="10">BIOL005A</FONT>>]
+	BIOL005A [color=lightblue2 shape=box style=filled]
+	BIOL157 [color=lightblue2 shape=box style=filled]
+	BIOL005A -> BIOL157
+	BIOL005B [color=lightblue2 shape=box style=filled]
+	BIOL157 [color=lightblue2 shape=box style=filled]
+	BIOL005B -> BIOL157
+	BIOL005C [color=lightblue2 shape=box style=filled]
+	BIOL157 [color=lightblue2 shape=box style=filled]
+	BIOL005C -> BIOL157
+	CHEM001C [color=gold shape=box style=filled]
+	BIOL157 [color=lightblue2 shape=box style=filled]
+	CHEM001C -> BIOL157 [style=dashed]
+	CHEM01HC [color=lightblue2 shape=box style=filled]
+	BIOL157 [color=lightblue2 shape=box style=filled]
+	CHEM01HC -> BIOL157 [style=dashed]
+	subgraph cluster_87 {
+	}
+	BIOL157 [label=<BIOL157<BR /><FONT POINT-SIZE="10">BIOL005A</FONT>>]
+	CHEM008C [color=lightblue2 shape=box style=filled]
+	BIOL157 [color=lightblue2 shape=box style=filled]
+	CHEM008C -> BIOL157
+	CHEM08LC [color=lightblue2 shape=box style=filled]
+	BIOL157 [color=lightblue2 shape=box style=filled]
+	CHEM08LC -> BIOL157 [style=dashed]
+	CHEM08HC [color=lightblue2 shape=box style=filled]
+	BIOL157 [color=lightblue2 shape=box style=filled]
+	CHEM08HC -> BIOL157 [style=dashed]
+	subgraph cluster_88 {
+	}
+	BIOL157 [label=<BIOL157<BR /><FONT POINT-SIZE="10">BIOL005A</FONT>>]
+	CHEM08HLC [color=lightblue2 shape=box style=filled]
+	BIOL157 [color=lightblue2 shape=box style=filled]
+	CHEM08HLC -> BIOL157 [style=dashed]
+	CHEM12HC [color=lightblue2 shape=box style=filled]
+	BIOL157 [color=lightblue2 shape=box style=filled]
+	CHEM12HC -> BIOL157 [style=dashed]
+	CHEM12C [color=lightblue2 shape=box style=filled]
+	BIOL157 [color=lightblue2 shape=box style=filled]
+	CHEM12C -> BIOL157 [style=dashed]
+	subgraph cluster_89 {
+	}
+	BIOL157 [label=<BIOL157<BR /><FONT POINT-SIZE="10">BIOL005A</FONT>>]
+	MATH007B [color=lightblue2 shape=box style=filled]
+	BIOL157 [color=lightblue2 shape=box style=filled]
+	MATH007B -> BIOL157 [style=dashed]
+	MATH009B [color=gold shape=box style=filled]
+	BIOL157 [color=lightblue2 shape=box style=filled]
+	MATH009B -> BIOL157 [style=dashed]
+	MATH09HB [color=lightblue2 shape=box style=filled]
+	BIOL157 [color=lightblue2 shape=box style=filled]
+	MATH09HB -> BIOL157 [style=dashed]
+	subgraph cluster_90 {
+	}
+	BIOL157 [label=<BIOL157<BR /><FONT POINT-SIZE="10">BIOL005A</FONT>>]
+	"Biochemistry 100" [color=lightblue2 shape=box style=filled]
+	BIOL157 [color=lightblue2 shape=box style=filled]
+	"Biochemistry 100" -> BIOL157 [style=dashed]
+	"Biochemistry 110A" [color=lightblue2 shape=box style=filled]
+	BIOL157 [color=lightblue2 shape=box style=filled]
+	"Biochemistry 110A" -> BIOL157 [style=dashed]
+	subgraph cluster_91 {
+	}
+	BIOL157 [label=<BIOL157<BR /><FONT POINT-SIZE="10">BIOL005A</FONT>>]
+	BIOL005A [color=lightblue2 shape=box style=filled]
+	BIOL161A [color=lightblue2 shape=box style=filled]
+	BIOL005A -> BIOL161A
+	BIOL005B [color=lightblue2 shape=box style=filled]
+	BIOL161A [color=lightblue2 shape=box style=filled]
+	BIOL005B -> BIOL161A
+	BIOL005C [color=lightblue2 shape=box style=filled]
+	BIOL161A [color=lightblue2 shape=box style=filled]
+	BIOL005C -> BIOL161A
+	CHEM001C [color=gold shape=box style=filled]
+	BIOL161A [color=lightblue2 shape=box style=filled]
+	CHEM001C -> BIOL161A [style=dashed]
+	CHEM01HC [color=lightblue2 shape=box style=filled]
+	BIOL161A [color=lightblue2 shape=box style=filled]
+	CHEM01HC -> BIOL161A [style=dashed]
+	subgraph cluster_92 {
+	}
+	BIOL161A [label=<BIOL161A<BR /><FONT POINT-SIZE="10">BIOL005A</FONT>>]
+	CHEM008A [color=lightblue2 shape=box style=filled]
+	BIOL161A [color=lightblue2 shape=box style=filled]
+	CHEM008A -> BIOL161A
+	CHEM08LA [color=lightblue2 shape=box style=filled]
+	BIOL161A [color=lightblue2 shape=box style=filled]
+	CHEM08LA -> BIOL161A [style=dashed]
+	CHEM08HA [color=lightblue2 shape=box style=filled]
+	BIOL161A [color=lightblue2 shape=box style=filled]
+	CHEM08HA -> BIOL161A [style=dashed]
+	subgraph cluster_93 {
+	}
+	BIOL161A [label=<BIOL161A<BR /><FONT POINT-SIZE="10">BIOL005A</FONT>>]
+	CHEM08HLA [color=lightblue2 shape=box style=filled]
+	BIOL161A [color=lightblue2 shape=box style=filled]
+	CHEM08HLA -> BIOL161A [style=dashed]
+	CHEM12HA [color=lightblue2 shape=box style=filled]
+	BIOL161A [color=lightblue2 shape=box style=filled]
+	CHEM12HA -> BIOL161A [style=dashed]
+	CHEM12A [color=lightblue2 shape=box style=filled]
+	BIOL161A [color=lightblue2 shape=box style=filled]
+	CHEM12A -> BIOL161A [style=dashed]
+	subgraph cluster_94 {
+	}
+	BIOL161A [label=<BIOL161A<BR /><FONT POINT-SIZE="10">BIOL005A</FONT>>]
+	MATH007B [color=lightblue2 shape=box style=filled]
+	BIOL161A [color=lightblue2 shape=box style=filled]
+	MATH007B -> BIOL161A [style=dashed]
+	MATH009B [color=gold shape=box style=filled]
+	BIOL161A [color=lightblue2 shape=box style=filled]
+	MATH009B -> BIOL161A [style=dashed]
+	MATH09HB [color=lightblue2 shape=box style=filled]
+	BIOL161A [color=lightblue2 shape=box style=filled]
+	MATH09HB -> BIOL161A [style=dashed]
+	subgraph cluster_95 {
+	}
+	BIOL161A [label=<BIOL161A<BR /><FONT POINT-SIZE="10">BIOL005A</FONT>>]
+	PHYS002A [color=lightblue2 shape=box style=filled]
+	BIOL161A [color=lightblue2 shape=box style=filled]
+	PHYS002A -> BIOL161A
+	BIOL005A [color=lightblue2 shape=box style=filled]
+	BIOL162 [color=lightblue2 shape=box style=filled]
+	BIOL005A -> BIOL162
+	BIOL005B [color=lightblue2 shape=box style=filled]
+	BIOL162 [color=lightblue2 shape=box style=filled]
+	BIOL005B -> BIOL162
+	BIOL005C [color=lightblue2 shape=box style=filled]
+	BIOL162 [color=lightblue2 shape=box style=filled]
+	BIOL005C -> BIOL162 [style=dashed]
+	BIOL100 [color=lightblue2 shape=box style=filled]
+	BIOL162 [color=lightblue2 shape=box style=filled]
+	BIOL100 -> BIOL162 [style=dashed]
+	"Entomology 100" [color=lightblue2 shape=box style=filled]
+	BIOL162 [color=lightblue2 shape=box style=filled]
+	"Entomology 100" -> BIOL162 [style=dashed]
+	subgraph cluster_96 {
+	}
+	BIOL162 [label=<BIOL162<BR /><FONT POINT-SIZE="10">BIOL005A</FONT>>]
+	BIOL005B [color=lightblue2 shape=box style=filled]
+	BIOL163 [color=lightblue2 shape=box style=filled]
+	BIOL005B -> BIOL163
+	BIOL005C [color=lightblue2 shape=box style=filled]
+	BIOL163 [color=lightblue2 shape=box style=filled]
+	BIOL005C -> BIOL163
+	CHEM001C [color=gold shape=box style=filled]
+	BIOL163 [color=lightblue2 shape=box style=filled]
+	CHEM001C -> BIOL163 [style=dashed]
+	CHEM01HC [color=lightblue2 shape=box style=filled]
+	BIOL163 [color=lightblue2 shape=box style=filled]
+	CHEM01HC -> BIOL163 [style=dashed]
+	subgraph cluster_97 {
+	}
+	BIOL163 [label=<BIOL163<BR /><FONT POINT-SIZE="10">BIOL005B</FONT>>]
+	MATH09HB [color=lightblue2 shape=box style=filled]
+	BIOL163 [color=lightblue2 shape=box style=filled]
+	MATH09HB -> BIOL163
+	MATH007B [color=lightblue2 shape=box style=filled]
+	BIOL163 [color=lightblue2 shape=box style=filled]
+	MATH007B -> BIOL163 [style=dashed]
+	MATH009B [color=gold shape=box style=filled]
+	BIOL163 [color=lightblue2 shape=box style=filled]
+	MATH009B -> BIOL163 [style=dashed]
+	subgraph cluster_98 {
+	}
+	BIOL163 [label=<BIOL163<BR /><FONT POINT-SIZE="10">BIOL005B</FONT>>]
+	CHEM001C [color=gold shape=box style=filled]
+	CHEM08HA [color=lightblue2 shape=box style=filled]
+	CHEM001C -> CHEM08HA
+	CHEM01LC [color=lightblue2 shape=box style=filled]
+	CHEM08HA [color=lightblue2 shape=box style=filled]
+	CHEM01LC -> CHEM08HA [style=dashed]
+	CHEM01HC [color=lightblue2 shape=box style=filled]
+	CHEM08HA [color=lightblue2 shape=box style=filled]
+	CHEM01HC -> CHEM08HA [style=dashed]
+	subgraph cluster_99 {
+	}
+	CHEM08HA [label=<CHEM08HA<BR /><FONT POINT-SIZE="10">CHEM001C</FONT>>]
+	CHEM1HLC [color=lightblue2 shape=box style=filled]
+	CHEM08HA [color=lightblue2 shape=box style=filled]
+	CHEM1HLC -> CHEM08HA
+	CHEM001C [color=gold shape=box style=filled]
+	CHEM109 [color=lightblue2 shape=box style=filled]
+	CHEM001C -> CHEM109 [style=dashed]
+	CHEM01HC [color=lightblue2 shape=box style=filled]
+	CHEM109 [color=lightblue2 shape=box style=filled]
+	CHEM01HC -> CHEM109 [style=dashed]
+	subgraph cluster_100 {
+	}
+	CHEM109 [label=<CHEM109<BR /><FONT POINT-SIZE="10">CHEM001C or CHEM01HC</FONT>>]
+	CHEM01LC [color=lightblue2 shape=box style=filled]
+	CHEM109 [color=lightblue2 shape=box style=filled]
+	CHEM01LC -> CHEM109 [style=dashed]
+	CHEM1HLC [color=lightblue2 shape=box style=filled]
+	CHEM109 [color=lightblue2 shape=box style=filled]
+	CHEM1HLC -> CHEM109 [style=dashed]
+	subgraph cluster_101 {
+	}
+	CHEM109 [label=<CHEM109<BR /><FONT POINT-SIZE="10">CHEM001C or CHEM01HC</FONT>>]
+	MATH009B [color=gold shape=box style=filled]
+	CHEM109 [color=lightblue2 shape=box style=filled]
+	MATH009B -> CHEM109 [style=dashed]
+	MATH09HB [color=lightblue2 shape=box style=filled]
+	CHEM109 [color=lightblue2 shape=box style=filled]
+	MATH09HB -> CHEM109 [style=dashed]
+	subgraph cluster_102 {
+	}
+	CHEM109 [label=<CHEM109<BR /><FONT POINT-SIZE="10">CHEM001C or CHEM01HC</FONT>>]
+	CHEM001C [color=gold shape=box style=filled]
+	CHEM110A [color=lightblue2 shape=box style=filled]
+	CHEM001C -> CHEM110A [style=dashed]
+	CHEM01HC [color=lightblue2 shape=box style=filled]
+	CHEM110A [color=lightblue2 shape=box style=filled]
+	CHEM01HC -> CHEM110A [style=dashed]
+	subgraph cluster_103 {
+	}
+	CHEM110A [label=<CHEM110A<BR /><FONT POINT-SIZE="10">CHEM001C or CHEM01HC</FONT>>]
+	CHEM01LC [color=lightblue2 shape=box style=filled]
+	CHEM110A [color=lightblue2 shape=box style=filled]
+	CHEM01LC -> CHEM110A [style=dashed]
+	CHEM1HLC [color=lightblue2 shape=box style=filled]
+	CHEM110A [color=lightblue2 shape=box style=filled]
+	CHEM1HLC -> CHEM110A [style=dashed]
+	subgraph cluster_104 {
+	}
+	CHEM110A [label=<CHEM110A<BR /><FONT POINT-SIZE="10">CHEM001C or CHEM01HC</FONT>>]
+	MATH010A [color=gold shape=box style=filled]
+	CHEM110A [color=lightblue2 shape=box style=filled]
+	MATH010A -> CHEM110A [style=dashed]
+	MATH009A [color=gold shape=box style=filled]
+	CHEM110A [color=lightblue2 shape=box style=filled]
+	MATH009A -> CHEM110A [style=dashed]
+	MATH09HC [color=lightblue2 shape=box style=filled]
+	CHEM110A [color=lightblue2 shape=box style=filled]
+	MATH09HC -> CHEM110A [style=dashed]
+	subgraph cluster_105 {
+	}
+	CHEM110A [label=<CHEM110A<BR /><FONT POINT-SIZE="10">CHEM001C or CHEM01HC</FONT>>]
+	PHYS002C [color=lightblue2 shape=box style=filled]
+	CHEM110A [color=lightblue2 shape=box style=filled]
+	PHYS002C -> CHEM110A [style=dashed]
+	PHYS040C [color=lightblue2 shape=box style=filled]
+	CHEM110A [color=lightblue2 shape=box style=filled]
+	PHYS040C -> CHEM110A [style=dashed]
+	subgraph cluster_106 {
+	}
+	CHEM110A [label=<CHEM110A<BR /><FONT POINT-SIZE="10">CHEM001C or CHEM01HC</FONT>>]
+	CHEM005 [color=lightblue2 shape=box style=filled]
+	CHEM125 [color=lightblue2 shape=box style=filled]
+	CHEM005 -> CHEM125
+	PHYS002C [color=lightblue2 shape=box style=filled]
+	CHEM125 [color=lightblue2 shape=box style=filled]
+	PHYS002C -> CHEM125 [style=dashed]
+	PHYS040C [color=lightblue2 shape=box style=filled]
+	CHEM125 [color=lightblue2 shape=box style=filled]
+	PHYS040C -> CHEM125 [style=dashed]
+	subgraph cluster_107 {
+	}
+	CHEM125 [label=<CHEM125<BR /><FONT POINT-SIZE="10">CHEM005</FONT>>]
+	CHEM008A [color=lightblue2 shape=box style=filled]
+	CHEM135 [color=lightblue2 shape=box style=filled]
+	CHEM008A -> CHEM135
+	CHEM08LA [color=lightblue2 shape=box style=filled]
+	CHEM135 [color=lightblue2 shape=box style=filled]
+	CHEM08LA -> CHEM135 [style=dashed]
+	CHEM08HA [color=lightblue2 shape=box style=filled]
+	CHEM135 [color=lightblue2 shape=box style=filled]
+	CHEM08HA -> CHEM135 [style=dashed]
+	subgraph cluster_108 {
+	}
+	CHEM135 [label=<CHEM135<BR /><FONT POINT-SIZE="10">CHEM008A</FONT>>]
+	CHEM08HLA [color=lightblue2 shape=box style=filled]
+	CHEM135 [color=lightblue2 shape=box style=filled]
+	CHEM08HLA -> CHEM135 [style=dashed]
+	CHEM12HA [color=lightblue2 shape=box style=filled]
+	CHEM135 [color=lightblue2 shape=box style=filled]
+	CHEM12HA -> CHEM135 [style=dashed]
+	CHEM12A [color=lightblue2 shape=box style=filled]
+	CHEM135 [color=lightblue2 shape=box style=filled]
+	CHEM12A -> CHEM135 [style=dashed]
+	subgraph cluster_109 {
+	}
+	CHEM135 [label=<CHEM135<BR /><FONT POINT-SIZE="10">CHEM008A</FONT>>]
+	CHEM008B [color=lightblue2 shape=box style=filled]
+	CHEM135 [color=lightblue2 shape=box style=filled]
+	CHEM008B -> CHEM135
+	CHEM08LB [color=lightblue2 shape=box style=filled]
+	CHEM135 [color=lightblue2 shape=box style=filled]
+	CHEM08LB -> CHEM135 [style=dashed]
+	CHEM08HB [color=lightblue2 shape=box style=filled]
+	CHEM135 [color=lightblue2 shape=box style=filled]
+	CHEM08HB -> CHEM135 [style=dashed]
+	subgraph cluster_110 {
+	}
+	CHEM135 [label=<CHEM135<BR /><FONT POINT-SIZE="10">CHEM008A</FONT>>]
+	CHEM08HLB [color=lightblue2 shape=box style=filled]
+	CHEM135 [color=lightblue2 shape=box style=filled]
+	CHEM08HLB -> CHEM135 [style=dashed]
+	CHEM12HB [color=lightblue2 shape=box style=filled]
+	CHEM135 [color=lightblue2 shape=box style=filled]
+	CHEM12HB -> CHEM135 [style=dashed]
+	CHEM12B [color=lightblue2 shape=box style=filled]
+	CHEM135 [color=lightblue2 shape=box style=filled]
+	CHEM12B -> CHEM135 [style=dashed]
+	subgraph cluster_111 {
+	}
+	CHEM135 [label=<CHEM135<BR /><FONT POINT-SIZE="10">CHEM008A</FONT>>]
+	CHEM005 [color=lightblue2 shape=box style=filled]
+	CHEM136 [color=lightblue2 shape=box style=filled]
+	CHEM005 -> CHEM136 [style=dashed]
+	ENSC104 [color=lightblue2 shape=box style=filled]
+	CHEM136 [color=lightblue2 shape=box style=filled]
+	ENSC104 -> CHEM136 [style=dashed]
+	subgraph cluster_112 {
+	}
+	CHEM136 [label=<CHEM136<BR /><FONT POINT-SIZE="10">CHEM005 or ENSC104</FONT>>]
+	CHEM001A [color=gold shape=box style=filled]
+	BIOL005A [color=lightblue2 shape=box style=filled]
+	CHEM001A -> BIOL005A
+	CHEM01LA [color=lightblue2 shape=box style=filled]
+	BIOL005A [color=lightblue2 shape=box style=filled]
+	CHEM01LA -> BIOL005A [style=dashed]
+	CHEM01HA [color=lightblue2 shape=box style=filled]
+	BIOL005A [color=lightblue2 shape=box style=filled]
+	CHEM01HA -> BIOL005A [style=dashed]
+	subgraph cluster_113 {
+	}
+	BIOL005A [label=<BIOL005A<BR /><FONT POINT-SIZE="10">CHEM001A</FONT>>]
+	CHEM1HLA [color=lightblue2 shape=box style=filled]
+	BIOL005A [color=lightblue2 shape=box style=filled]
+	CHEM1HLA -> BIOL005A
+	BIOL005A [color=lightblue2 shape=box style=filled]
+	BIOL005B [color=lightblue2 shape=box style=filled]
+	BIOL005A -> BIOL005B
+	BIOL020 [color=lightblue2 shape=box style=filled]
+	BIOL005B [color=lightblue2 shape=box style=filled]
+	BIOL020 -> BIOL005B [style=dashed]
+	BIOL05LA [color=lightblue2 shape=box style=filled]
+	BIOL005B [color=lightblue2 shape=box style=filled]
+	BIOL05LA -> BIOL005B [style=dashed]
+	subgraph cluster_114 {
+	}
+	BIOL005B [label=<BIOL005B<BR /><FONT POINT-SIZE="10">BIOL005A</FONT>>]
+	CHEM001A [color=gold shape=box style=filled]
+	BIOL005B [color=lightblue2 shape=box style=filled]
+	CHEM001A -> BIOL005B [style=dashed]
+	CHEM01HA [color=lightblue2 shape=box style=filled]
+	BIOL005B [color=lightblue2 shape=box style=filled]
+	CHEM01HA -> BIOL005B [style=dashed]
+	subgraph cluster_115 {
+	}
+	BIOL005B [label=<BIOL005B<BR /><FONT POINT-SIZE="10">BIOL005A</FONT>>]
+	CHEM001B [color=gold shape=box style=filled]
+	BIOL005B [color=lightblue2 shape=box style=filled]
+	CHEM001B -> BIOL005B [style=dashed]
+	CHEM01HB [color=lightblue2 shape=box style=filled]
+	BIOL005B [color=lightblue2 shape=box style=filled]
+	CHEM01HB -> BIOL005B [style=dashed]
+	subgraph cluster_116 {
+	}
+	BIOL005B [label=<BIOL005B<BR /><FONT POINT-SIZE="10">BIOL005A</FONT>>]
+	BIOL005A [color=lightblue2 shape=box style=filled]
+	BIOL005C [color=lightblue2 shape=box style=filled]
+	BIOL005A -> BIOL005C
+	BIOL020 [color=lightblue2 shape=box style=filled]
+	BIOL005C [color=lightblue2 shape=box style=filled]
+	BIOL020 -> BIOL005C [style=dashed]
+	BIOL05LA [color=lightblue2 shape=box style=filled]
+	BIOL005C [color=lightblue2 shape=box style=filled]
+	BIOL05LA -> BIOL005C [style=dashed]
+	subgraph cluster_117 {
+	}
+	BIOL005C [label=<BIOL005C<BR /><FONT POINT-SIZE="10">BIOL005A</FONT>>]
+	BIOL005B [color=lightblue2 shape=box style=filled]
+	BIOL005C [color=lightblue2 shape=box style=filled]
+	BIOL005B -> BIOL005C
+	MATH009A [color=gold shape=box style=filled]
+	BIOL005C [color=lightblue2 shape=box style=filled]
+	MATH009A -> BIOL005C [style=dashed]
+	MATH09HA [color=lightblue2 shape=box style=filled]
+	BIOL005C [color=lightblue2 shape=box style=filled]
+	MATH09HA -> BIOL005C [style=dashed]
+	MATH008B [color=lightblue2 shape=box style=filled]
+	BIOL005C [color=lightblue2 shape=box style=filled]
+	MATH008B -> BIOL005C [style=dashed]
+	subgraph cluster_118 {
+	}
+	BIOL005C [label=<BIOL005C<BR /><FONT POINT-SIZE="10">BIOL005A</FONT>>]
+	CHEM001B [color=gold shape=box style=filled]
+	CHEM001C [color=gold shape=box style=filled]
+	CHEM001B -> CHEM001C [style=dashed]
+	CHEM01HB [color=lightblue2 shape=box style=filled]
+	CHEM001C [color=gold shape=box style=filled]
+	CHEM01HB -> CHEM001C [style=dashed]
+	subgraph cluster_119 {
+	}
+	CHEM001C [label=<CHEM001C<BR /><FONT POINT-SIZE="10">CHEM001B or CHEM01HB</FONT>>]
+	CHEM01LB [color=lightblue2 shape=box style=filled]
+	CHEM001C [color=gold shape=box style=filled]
+	CHEM01LB -> CHEM001C [style=dashed]
+	CHEM1HLB [color=lightblue2 shape=box style=filled]
+	CHEM001C [color=gold shape=box style=filled]
+	CHEM1HLB -> CHEM001C [style=dashed]
+	subgraph cluster_120 {
+	}
+	CHEM001C [label=<CHEM001C<BR /><FONT POINT-SIZE="10">CHEM001B or CHEM01HB</FONT>>]
+	MATH005 [color=lightblue2 shape=box style=filled]
+	CHEM001W [color=lightblue2 shape=box style=filled]
+	MATH005 -> CHEM001W [style=dashed]
+	MATH006A [color=lightblue2 shape=box style=filled]
+	CHEM001W [color=lightblue2 shape=box style=filled]
+	MATH006A -> CHEM001W [style=dashed]
+	subgraph cluster_121 {
+	}
+	CHEM001W [label=<CHEM001W<BR /><FONT POINT-SIZE="10">MATH005 or MATH006A</FONT>>]
+	CHEM001C [color=gold shape=box style=filled]
+	CHEM008A [color=lightblue2 shape=box style=filled]
+	CHEM001C -> CHEM008A
+	CHEM01LC [color=lightblue2 shape=box style=filled]
+	CHEM008A [color=lightblue2 shape=box style=filled]
+	CHEM01LC -> CHEM008A [style=dashed]
+	CHEM01HC [color=lightblue2 shape=box style=filled]
+	CHEM008A [color=lightblue2 shape=box style=filled]
+	CHEM01HC -> CHEM008A [style=dashed]
+	subgraph cluster_122 {
+	}
+	CHEM008A [label=<CHEM008A<BR /><FONT POINT-SIZE="10">CHEM001C</FONT>>]
+	CHEM1HLC [color=lightblue2 shape=box style=filled]
+	CHEM008A [color=lightblue2 shape=box style=filled]
+	CHEM1HLC -> CHEM008A
+	CHEM008B [color=lightblue2 shape=box style=filled]
+	CHEM008C [color=lightblue2 shape=box style=filled]
+	CHEM008B -> CHEM008C
+	CHEM08LB [color=lightblue2 shape=box style=filled]
+	CHEM008C [color=lightblue2 shape=box style=filled]
+	CHEM08LB -> CHEM008C [style=dashed]
+	CHEM08HB [color=lightblue2 shape=box style=filled]
+	CHEM008C [color=lightblue2 shape=box style=filled]
+	CHEM08HB -> CHEM008C [style=dashed]
+	subgraph cluster_123 {
+	}
+	CHEM008C [label=<CHEM008C<BR /><FONT POINT-SIZE="10">CHEM008B</FONT>>]
+	CHEM08HLB [color=lightblue2 shape=box style=filled]
+	CHEM008C [color=lightblue2 shape=box style=filled]
+	CHEM08HLB -> CHEM008C [style=dashed]
+	CHEM12B [color=lightblue2 shape=box style=filled]
+	CHEM008C [color=lightblue2 shape=box style=filled]
+	CHEM12B -> CHEM008C [style=dashed]
+	CHEM12HB [color=lightblue2 shape=box style=filled]
+	CHEM008C [color=lightblue2 shape=box style=filled]
+	CHEM12HB -> CHEM008C [style=dashed]
+	subgraph cluster_124 {
+	}
+	CHEM008C [label=<CHEM008C<BR /><FONT POINT-SIZE="10">CHEM008B</FONT>>]
+	SOC001 [color=lightblue2 shape=box style=filled]
+	SOC002S [color=lightblue2 shape=box style=filled]
+	SOC001 -> SOC002S [style=dashed]
+	SOC001H [color=lightblue2 shape=box style=filled]
+	SOC002S [color=lightblue2 shape=box style=filled]
+	SOC001H -> SOC002S [style=dashed]
+	subgraph cluster_125 {
+	}
+	SOC002S [label=<SOC002S<BR /><FONT POINT-SIZE="10">SOC001 or SOC001H</FONT>>]
+	SOC001 [color=lightblue2 shape=box style=filled]
+	SOC003 [color=lightblue2 shape=box style=filled]
+	SOC001 -> SOC003 [style=dashed]
+	SOC001H [color=lightblue2 shape=box style=filled]
+	SOC003 [color=lightblue2 shape=box style=filled]
+	SOC001H -> SOC003 [style=dashed]
+	subgraph cluster_126 {
+	}
+	SOC003 [label=<SOC003<BR /><FONT POINT-SIZE="10">SOC001 or SOC001H</FONT>>]
+	SOC001 [color=lightblue2 shape=box style=filled]
+	SOC004 [color=lightblue2 shape=box style=filled]
+	SOC001 -> SOC004 [style=dashed]
+	SOC001H [color=lightblue2 shape=box style=filled]
+	SOC004 [color=lightblue2 shape=box style=filled]
+	SOC001H -> SOC004 [style=dashed]
+	subgraph cluster_127 {
+	}
+	SOC004 [label=<SOC004<BR /><FONT POINT-SIZE="10">SOC001 or SOC001H</FONT>>]
+	SOC004 [color=lightblue2 shape=box style=filled]
+	SOC005 [color=lightblue2 shape=box style=filled]
+	SOC004 -> SOC005
+	SOC005 [color=lightblue2 shape=box style=filled]
+	SOC130 [color=lightblue2 shape=box style=filled]
+	SOC005 -> SOC130
+	SOC001 [color=lightblue2 shape=box style=filled]
+	SOC131F [color=lightblue2 shape=box style=filled]
+	SOC001 -> SOC131F [style=dashed]
+	SOC001H [color=lightblue2 shape=box style=filled]
+	SOC131F [color=lightblue2 shape=box style=filled]
+	SOC001H -> SOC131F [style=dashed]
+	subgraph cluster_128 {
+	}
+	SOC131F [label=<SOC131F<BR /><FONT POINT-SIZE="10">SOC001 or SOC001H</FONT>>]
+	SOC001 [color=lightblue2 shape=box style=filled]
+	SOC135S [color=lightblue2 shape=box style=filled]
+	SOC001 -> SOC135S [style=dashed]
+	SOC001H [color=lightblue2 shape=box style=filled]
+	SOC135S [color=lightblue2 shape=box style=filled]
+	SOC001H -> SOC135S [style=dashed]
+	subgraph cluster_129 {
+	}
+	SOC135S [label=<SOC135S<BR /><FONT POINT-SIZE="10">SOC001 or SOC001H</FONT>>]
+	SOC005 [color=lightblue2 shape=box style=filled]
+	SOC142 [color=lightblue2 shape=box style=filled]
+	SOC005 -> SOC142
+	SOC001 [color=lightblue2 shape=box style=filled]
+	SOC159 [color=lightblue2 shape=box style=filled]
+	SOC001 -> SOC159 [style=dashed]
+	SOC001H [color=lightblue2 shape=box style=filled]
+	SOC159 [color=lightblue2 shape=box style=filled]
+	SOC001H -> SOC159 [style=dashed]
+	subgraph cluster_130 {
+	}
+	SOC159 [label=<SOC159<BR /><FONT POINT-SIZE="10">SOC001 or SOC001H</FONT>>]
+	SOC004 [color=lightblue2 shape=box style=filled]
+	SOC159 [color=lightblue2 shape=box style=filled]
+	SOC004 -> SOC159
+	SOC001 [color=lightblue2 shape=box style=filled]
+	SOC163 [color=lightblue2 shape=box style=filled]
+	SOC001 -> SOC163 [style=dashed]
+	SOC001H [color=lightblue2 shape=box style=filled]
+	SOC163 [color=lightblue2 shape=box style=filled]
+	SOC001H -> SOC163 [style=dashed]
+	subgraph cluster_131 {
+	}
+	SOC163 [label=<SOC163<BR /><FONT POINT-SIZE="10">SOC001 or SOC001H</FONT>>]
+	SOC003 [color=lightblue2 shape=box style=filled]
+	SOC169 [color=lightblue2 shape=box style=filled]
+	SOC003 -> SOC169
+	SOC005 [color=lightblue2 shape=box style=filled]
+	SOC169 [color=lightblue2 shape=box style=filled]
+	SOC005 -> SOC169
+	SOC001 [color=lightblue2 shape=box style=filled]
+	SOC184 [color=lightblue2 shape=box style=filled]
+	SOC001 -> SOC184
+	SOC004 [color=lightblue2 shape=box style=filled]
+	SOC184 [color=lightblue2 shape=box style=filled]
+	SOC004 -> SOC184
+	SOC005 [color=lightblue2 shape=box style=filled]
+	SOC184 [color=lightblue2 shape=box style=filled]
+	SOC005 -> SOC184 [style=dashed]
+	SOC001H [color=lightblue2 shape=box style=filled]
+	SOC184 [color=lightblue2 shape=box style=filled]
+	SOC001H -> SOC184 [style=dashed]
+	subgraph cluster_132 {
+	}
+	SOC184 [label=<SOC184<BR /><FONT POINT-SIZE="10">SOC001</FONT>>]
 	MATH009B [color=gold shape=box style=filled]
 	PHYS002B [color=lightblue2 shape=box style=filled]
 	MATH009B -> PHYS002B [style=dashed]
 	MATH09HB [color=lightblue2 shape=box style=filled]
 	PHYS002B [color=lightblue2 shape=box style=filled]
 	MATH09HB -> PHYS002B [style=dashed]
-	subgraph cluster_1 {
+	subgraph cluster_133 {
 	}
 	PHYS002B [label=<PHYS002B<BR /><FONT POINT-SIZE="10">MATH009B or MATH09HB</FONT>>]
 	PHYS002A [color=lightblue2 shape=box style=filled]
@@ -34,7 +2014,7 @@ digraph {
 	MATH09HA [color=lightblue2 shape=box style=filled]
 	PHYS040A [color=lightblue2 shape=box style=filled]
 	MATH09HA -> PHYS040A [style=dashed]
-	subgraph cluster_2 {
+	subgraph cluster_134 {
 	}
 	PHYS040A [label=<PHYS040A<BR /><FONT POINT-SIZE="10">MATH008B or MATH009A or MATH09HA</FONT>>]
 	MATH009B [color=gold shape=box style=filled]
@@ -43,7 +2023,7 @@ digraph {
 	MATH09HB [color=lightblue2 shape=box style=filled]
 	PHYS040A [color=lightblue2 shape=box style=filled]
 	MATH09HB -> PHYS040A [style=dashed]
-	subgraph cluster_3 {
+	subgraph cluster_135 {
 	}
 	PHYS040A [label=<PHYS040A<BR /><FONT POINT-SIZE="10">MATH008B or MATH009A or MATH09HA</FONT>>]
 	PHYS040B [color=lightblue2 shape=box style=filled]
@@ -55,7 +2035,7 @@ digraph {
 	MATH09HC [color=lightblue2 shape=box style=filled]
 	PHYS040C [color=lightblue2 shape=box style=filled]
 	MATH09HC -> PHYS040C [style=dashed]
-	subgraph cluster_4 {
+	subgraph cluster_136 {
 	}
 	PHYS040C [label=<PHYS040C<BR /><FONT POINT-SIZE="10">PHYS040B</FONT>>]
 	MATH009A [color=gold shape=box style=filled]
@@ -64,7 +2044,7 @@ digraph {
 	MATH09HA [color=lightblue2 shape=box style=filled]
 	PHYS041A [color=gold shape=box style=filled]
 	MATH09HA -> PHYS041A [style=dashed]
-	subgraph cluster_5 {
+	subgraph cluster_137 {
 	}
 	PHYS041A [label=<PHYS041A<BR /><FONT POINT-SIZE="10">MATH009A or MATH09HA</FONT>>]
 	MATH010B [color=gold shape=box style=filled]
@@ -82,7 +2062,7 @@ digraph {
 	PHYS002C [color=lightblue2 shape=box style=filled]
 	PHYS111 [color=lightblue2 shape=box style=filled]
 	PHYS002C -> PHYS111 [style=dashed]
-	subgraph cluster_6 {
+	subgraph cluster_138 {
 	}
 	PHYS111 [label=<PHYS111<BR /><FONT POINT-SIZE="10">MATH010B</FONT>>]
 	MATH009C [color=gold shape=box style=filled]
@@ -100,7 +2080,7 @@ digraph {
 	PHYS041A [color=gold shape=box style=filled]
 	PHYS130A [color=gold shape=box style=filled]
 	PHYS041A -> PHYS130A [style=dashed]
-	subgraph cluster_7 {
+	subgraph cluster_139 {
 	}
 	PHYS130A [label=<PHYS130A<BR /><FONT POINT-SIZE="10">MATH009C</FONT>>]
 	MATH010B [color=gold shape=box style=filled]
@@ -118,7 +2098,7 @@ digraph {
 	PHYS041B [color=gold shape=box style=filled]
 	PHYS135A [color=gold shape=box style=filled]
 	PHYS041B -> PHYS135A [style=dashed]
-	subgraph cluster_8 {
+	subgraph cluster_140 {
 	}
 	PHYS135A [label=<PHYS135A<BR /><FONT POINT-SIZE="10">MATH010B</FONT>>]
 	PHYS002B [color=lightblue2 shape=box style=filled]
@@ -130,7 +2110,7 @@ digraph {
 	PHYS041B [color=gold shape=box style=filled]
 	PHYS139L [color=gold shape=box style=filled]
 	PHYS041B -> PHYS139L [style=dashed]
-	subgraph cluster_9 {
+	subgraph cluster_141 {
 	}
 	PHYS139L [label=<PHYS139L<BR /><FONT POINT-SIZE="10">PHYS002B or PHYS040C or PHYS041B</FONT>>]
 	PHYS002B [color=lightblue2 shape=box style=filled]
@@ -142,7 +2122,7 @@ digraph {
 	PHYS041C [color=gold shape=box style=filled]
 	PHYS150A [color=lightblue2 shape=box style=filled]
 	PHYS041C -> PHYS150A [style=dashed]
-	subgraph cluster_10 {
+	subgraph cluster_142 {
 	}
 	PHYS150A [label=<PHYS150A<BR /><FONT POINT-SIZE="10">PHYS002B or PHYS040E or PHYS041C</FONT>>]
 	MATH010B [color=gold shape=box style=filled]
@@ -163,7 +2143,7 @@ digraph {
 	PHYS041C [color=gold shape=box style=filled]
 	PHYS156A [color=gold shape=box style=filled]
 	PHYS041C -> PHYS156A [style=dashed]
-	subgraph cluster_11 {
+	subgraph cluster_143 {
 	}
 	PHYS156A [label=<PHYS156A<BR /><FONT POINT-SIZE="10">MATH010B</FONT>>]
 }

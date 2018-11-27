@@ -6,10 +6,11 @@ from graphviz import Digraph # Primary renderer
 ### IMPORT FROM DATASET {
 
 def importData(loc): # File location should have all_prereqs and subjects.json in it
+    # Get relational prereq data
     with open(loc + '/201740_all_prereqs.json','r') as f:
         data = json.load(f)
 
-    # Define course object
+    # Define course object (for code readability reasons)
     class course:
         def __init__(self, courseName, preReq, courseID, subject):
             self.courseName = courseName
@@ -17,27 +18,31 @@ def importData(loc): # File location should have all_prereqs and subjects.json i
             self.courseID = courseID
             self.subject = subject
 
-    # Mildly brittle parser
+    # Now get all of the {'Computer Science': 'CS', ...} information for abbreviation conversion
+    with open(loc + '/subjects.json') as f:
+        codes = json.load(f)
+    lookup = {x['description']:x['code'] for x in codes}
+
+    # This parser is a bit brittle - weaknesses described below.
     def parseAndOr(testString):
+        '''TODO: Input/output example for docstring'''
+        # TODO: Allow for an "ignore" input for specific classes if they're causing issues,
+        #       or just have better error reporting.
         # Presumption: AND statements are top level, then there are OR statements.
         # So there's nothing like (CS 111 AND CS 11) OR (MATH 031 AND MATH 10A)
-        # This is important because the parser 
+        # This is likely, but not guaranteed.
         if testString == dict():
             return dict()
         if len(testString.split('\n')) < 3:
             return dict()
-        if 'Score for' in testString: # EXTREMELY HACKY SOLUTION
+        if 'Score for' in testString: # TODO: EXTREMELY HACKY SOLUTION (ignores all required testing scores)
             return dict()
         mod = testString.split('and\n')
         mod = [x.split('or\n') for x in mod]
         mod = [[y.split('\n') for y in x] for x in mod]
 
-        # Now get all of the 'Computer Science': 'CS' type information
-        with open(loc + '/subjects.json') as f:
-            codes = json.load(f)
-        lookup = {x['description']:x['code'] for x in codes}
-
         def classconvert(classname):
+            '''TODO: Input/output example for docstring'''
             intermed = classname.split(' ')
             intermed = [' '.join(intermed[:-1]), intermed[-1]]
             # lookup is defined above
@@ -50,12 +55,12 @@ def importData(loc): # File location should have all_prereqs and subjects.json i
             # This is the most horrific list comprehension I've every written, but it works
             mod = [[[
                  classconvert(y[1][y[1].index('Test:')+6:].strip()), # Class name
-                 y[2].split(' ')[-1], # Grade
-                 'NC' if y[3].strip()[:7] == 'May not' else 'C' # Concurrent allowed?
+                 y[2].split(' ')[-1],                                # Grade
+                 'NC' if y[3].strip()[:7] == 'May not' else 'C'      # Concurrent allowed?
                     ] if y[0] == '(' else [
                  classconvert(y[0][y[0].index('Test:')+6:].strip()), # Class name
-                 y[1].split(' ')[-1], # Grade
-                 'NC' if y[2].strip()[:7] == 'May not' else 'C' # Concurrent allowed?
+                 y[1].split(' ')[-1],                                # Grade
+                 'NC' if y[2].strip()[:7] == 'May not' else 'C'      # Concurrent allowed?
                     ] for y in x] for x in mod]
         except:
             print(testString)
@@ -69,8 +74,8 @@ def importData(loc): # File location should have all_prereqs and subjects.json i
             mycourse = course(currentCourse['subjectCourse'], parseAndOr(currentCourse['prereqs']), currentCourse['id'], currentCourse['subject'])
         except KeyError:
             mycourse = course(currentCourse['subjectCourse'], dict(), currentCourse['id'], currentCourse['subject'])
-        courseList.append(mycourse) # Writes course objects to a list
-    
+        courseList.append(mycourse)
+
     return courseList
 ### }
 

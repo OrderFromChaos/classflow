@@ -37,7 +37,7 @@ DARKTHEMECOLORS = {'background':'#043742',
 ### Main program
 if REMOVENONMAJOR:
     assert SPECIALFLAG is None, 'REMOVENONMAJOR cannot be true if SPECIALFLAG = "all"'
-courseList = importData('/home/order/Dropbox/Python_Code/Cloned/ucr-course-graph/data')
+courseList = importData('./ucr-course-graph/data')
 dot = constructGraph(courseList,
                      REMOVEGRADCLASS=REMOVEGRADCLASS,
                      REQUIREMENTCOLOR=REQUIREMENTCOLOR,

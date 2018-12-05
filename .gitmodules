@@ -1,0 +1,3 @@
+[submodule "ucr-course-data"]
+	path = ucr-course-data
+	url = https://github.com/willshiao/ucr-course-data

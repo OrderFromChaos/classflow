@@ -25,6 +25,8 @@ def importData(loc): # File location should have all_prereqs and subjects.json i
 
     # This parser is a bit brittle - weaknesses described below.
     def parseAndOr(testString):
+        '''Input example:
+        
         '''TODO: Input/output example for docstring'''
         # TODO: Allow for an "ignore" input for specific classes if they're causing issues,
         #       or just have better error reporting.

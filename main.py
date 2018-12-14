@@ -48,4 +48,4 @@ dot = constructGraph(courseList,
                      DARKTHEME=DARKTHEME,
                      DARKTHEMECOLORS=DARKTHEMECOLORS)
 
-dot.render(filename='./out',view=True,format='png')
+dot.render(filename='./generated/out',view=True,format='png')

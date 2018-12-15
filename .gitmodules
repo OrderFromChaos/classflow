@@ -1,3 +1,4 @@
 [submodule "ucr-course-graph"]
 	path = ucr-course-graph
 	url = https://github.com/willshiao/ucr-course-graph
+    branch = syris

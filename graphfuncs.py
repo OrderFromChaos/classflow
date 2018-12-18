@@ -83,7 +83,7 @@ def importData(loc): # File location should have all_prereqs and subjects.json i
 
 ### RENDER GRAPH {
 
-def constructGraph(courseList,REMOVEGRADCLASS,REQUIREMENTCOLOR,REQUIRED,REMOVENONMAJOR,MAJOR,SPECIALFLAG,DARKTHEME,DARKTHEMECOLORS):
+def constructGraph(courseList,REMOVEGRADCLASS,REQUIREMENTCOLOR,REQUIRED,REMOVENONMAJOR,MAJOR,SPECIALFLAG,DARKTHEME,DARKTHEMECOLORS,MANUALREMOVAL,REMOVALCLASSES):
     def undergradOnly(courseList):
         numbers = set('0123456789')
         return [x for x in courseList if [y for y in x.courseName if y in numbers][0] in {'0','1'}]
@@ -95,10 +95,14 @@ def constructGraph(courseList,REMOVEGRADCLASS,REQUIREMENTCOLOR,REQUIRED,REMOVENO
         else:
             return [x for x in courseList if x.subject in major]
 
+    majorList = selectMajor(courseList, MAJOR, flag=SPECIALFLAG)
     if REMOVEGRADCLASS:
-        majorList = undergradOnly(selectMajor(courseList, MAJOR, flag=SPECIALFLAG))
-    else:
-        majorList = selectMajor(courseList, MAJOR, flag=SPECIALFLAG)
+        majorList = undergradOnly(majorList)
+
+    if MANUALREMOVAL:
+        print(len(majorList))
+        majorList = [x for x in majorList if x.courseName not in REMOVALCLASSES]
+        print(len(majorList))
 
     if DARKTHEME:
         dot = Digraph(comment='classflow test',graph_attr={'rankdir': 'LR', 'ranksep': '2', 'overlap': 'false', 'bgcolor':DARKTHEMECOLORS['background']})
@@ -126,6 +130,11 @@ def constructGraph(courseList,REMOVEGRADCLASS,REQUIREMENTCOLOR,REQUIRED,REMOVENO
            toCourse example: "course" object with courseName, etc.
            Creates nodes on both ends, then draws the requisite line between the two of them.
            Also references the global REQUIRED list"""
+
+        # Exits doing anything if it finds out that the prerequisite is in removal classes
+        if MANUALREMOVAL:
+            if fromCourse[0] in REMOVALCLASSES:
+                return True
 
         shape = 'box'
 
@@ -183,6 +192,7 @@ def constructGraph(courseList,REMOVEGRADCLASS,REQUIREMENTCOLOR,REQUIRED,REMOVENO
                 graph.edge(fromCourse[0],toCourse.courseName,color=DARKTHEMECOLORS['lines'],**args)
             else:
                 graph.edge(fromCourse[0],toCourse.courseName,color='black',**args)
+        return False
 
     # Create lines between courses
     runID = 0
@@ -192,7 +202,9 @@ def constructGraph(courseList,REMOVEGRADCLASS,REQUIREMENTCOLOR,REQUIRED,REMOVENO
             for orGroup in _class.preReq:
                 if len(orGroup) > 1:
                     for _prereq in orGroup:
-                        requisiteLine(_prereq,_class,dot,style='dashed', fromOrGroup=True)
+                        # specialexit was added as a passthrough for when a class should be ignored during prerequisite line drawing
+                        # It's a bit more elegant than wrapping the whole thing in a giant if statement
+                        specialexit = requisiteLine(_prereq,_class,dot,style='dashed', fromOrGroup=True)
                     # Now add the or group as a prereq under the node
                     # Be careful to not overwrite other labels; automatically do a <BR /> if needed.
                     safeAddLabel(_class.courseName,' or '.join([x[0] for x in orGroup]))

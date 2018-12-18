@@ -4,19 +4,19 @@ from graphviz import Digraph
 
 ### Hyperparameters
 # The set of majors you want to draw a graph for.
-MAJOR = {'PHYS','CS','MATH'}
+MAJOR = {'PHYS'}
 SPECIALFLAG = None # If SPECIALFLAG is set to 'all' instead of None, you can get a graph of every class at UCR.
 
 # Whether to remove classes that aren't a part of the requested major and instead list them as prereqs under
 #    the specific class box they're for.
-REMOVENONMAJOR = False
+REMOVENONMAJOR = True
 
 # Whether to remove 2xx+ (grad) classes
 REMOVEGRADCLASS = True
 
 # Whether to color classes provided in the REQUIRED set.
 # REQUIRED classes are colored gold, else colored light blue.
-REQUIREMENTCOLOR = False
+REQUIREMENTCOLOR = True
 REQUIRED = {'PHYS039','MATH009A','MATH009B','MATH009C','CHEM001A',
                 'CHEM001B','CHEM001C','CS010','MATH010A','MATH010B','MATH046',
                 'PHYS041A','PHYS041B','PHYS041C','PHYS130A','PHYS130B','PHYS132',
@@ -30,8 +30,10 @@ DARKTHEMECOLORS = {'background':'#043742',
                    'lines':'#3fc6b4',
                    'textcolor':'white'}
 
-
-
+# Manual removal can be used to remove lower-div courses for non-majors.
+# This will greatly increase graph readability if, for example, you're making it for only physics majors.
+MANUALREMOVAL = True
+REMOVALCLASSES = {'PHYS002A','PHYS002B','PHYS002C','PHYS040A','PHYS040B','PHYS040C','PHYS040D','PHYS040E'}
 
 
 ### Main program
@@ -46,6 +48,8 @@ dot = constructGraph(courseList,
                      MAJOR=MAJOR,
                      SPECIALFLAG=SPECIALFLAG,
                      DARKTHEME=DARKTHEME,
-                     DARKTHEMECOLORS=DARKTHEMECOLORS)
+                     DARKTHEMECOLORS=DARKTHEMECOLORS,
+                     MANUALREMOVAL=MANUALREMOVAL,
+                     REMOVALCLASSES=REMOVALCLASSES)
 
 dot.render(filename='./generated/out',view=True,format='png')

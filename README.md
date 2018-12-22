@@ -1,1 +1,1 @@
-![cs course graph](https://github.com/OrderFromChaos/classflow/blob/master/generated/test.png)
+![cs course graph](https://github.com/OrderFromChaos/classflow/blob/master/example.png)

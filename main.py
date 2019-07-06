@@ -4,19 +4,21 @@ from graphviz import Digraph
 
 ### Hyperparameters
 # The set of majors you want to draw a graph for.
-MAJOR = {'PHYS'}
+MAJOR = {'PHYS','CS','MATH','ECON','BIOL'}
 SPECIALFLAG = None # If SPECIALFLAG is set to 'all' instead of None, you can get a graph of every class at UCR.
 
 # Whether to remove classes that aren't a part of the requested major and instead list them as prereqs under
 #    the specific class box they're for.
-REMOVENONMAJOR = True
+REMOVENONMAJOR = False
+if REMOVENONMAJOR:
+    assert len(MAJOR) <= 1
 
 # Whether to remove 2xx+ (grad) classes
 REMOVEGRADCLASS = True
 
 # Whether to color classes provided in the REQUIRED set.
 # REQUIRED classes are colored gold, else colored light blue.
-REQUIREMENTCOLOR = True
+REQUIREMENTCOLOR = False
 REQUIRED = {'PHYS039','MATH009A','MATH009B','MATH009C','CHEM001A',
                 'CHEM001B','CHEM001C','CS010','MATH010A','MATH010B','MATH046',
                 'PHYS041A','PHYS041B','PHYS041C','PHYS130A','PHYS130B','PHYS132',
